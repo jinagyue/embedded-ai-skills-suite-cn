@@ -1,0 +1,4 @@
+[00:00:01.000] @FREERTOS_SNAPSHOT {"tick":12000,"task_count":3,"free_heap":4096,"runtime_total":10000}
+[00:00:01.001] @FREERTOS_TASK {"name":"comm","state":"BLOCKED","priority":3,"base_priority":3,"stack_hwm_words":18,"runtime_counter":2500}
+[00:00:01.002] @FREERTOS_TASK {"name":"measure","state":"READY","priority":2,"base_priority":2,"stack_hwm_words":48,"runtime_counter":6000}
+[00:00:01.003] @FREERTOS_TASK {"name":"idle","state":"READY","priority":0,"base_priority":0,"stack_hwm_words":112,"runtime_counter":1500}

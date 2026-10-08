@@ -1,0 +1,4 @@
+# Only needed for optional EIDE and CAN modules
+PyYAML
+python-can
+cantools

@@ -1,0 +1,4 @@
+#define configMAX_PRIORITIES 7
+#define configTOTAL_HEAP_SIZE 15360
+#define configTICK_RATE_HZ 1000
+#define configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY 5

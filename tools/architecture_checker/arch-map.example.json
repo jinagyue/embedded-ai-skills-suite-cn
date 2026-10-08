@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "analysis_confirmed_by": "人工/AI阅读工程后填写",
+  "modules": [
+    {"role": "L1_VENDOR", "patterns": ["Core/**", "Drivers/**"]},
+    {"role": "L2_BSP_DRIVER", "patterns": ["BSP/Driver/**"]},
+    {"role": "L3_PLATFORM", "patterns": ["BSP/Service/**", "BSP/Board/**"]},
+    {"role": "L3_DEVICE", "patterns": ["Device/**"]},
+    {"role": "L3_PROTOCOL", "patterns": ["Protocol/**"]},
+    {"role": "L4_SERVICE", "patterns": ["Service/**"]},
+    {"role": "L5_APP", "patterns": ["App/**"]},
+    {"role": "L5_RTOS", "patterns": ["RTOS/**"]},
+    {"role": "COMMON", "patterns": ["Common/**"]},
+    {"role": "CONFIG", "patterns": ["Config/**"]},
+    {"role": "TEST", "patterns": ["Tests/**", "tests/**"]}
+  ]
+}

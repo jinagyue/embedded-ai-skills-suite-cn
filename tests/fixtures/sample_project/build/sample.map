@@ -1,0 +1,20 @@
+==============================================================================
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00012C00, Max: 0x00100000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08012C00, Size: 0x00005200, Max: 0x00020000, ABSOLUTE)
+
+==============================================================================
+Image component sizes
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+      1200          0        120         32        512          0   app.o
+       800          0         64         16        256          0   freertos.o
+       220          0         24          0         64          0   usart.o
+
+Image Symbol Table
+    Local Symbols
+    main                                      0x08000101   Thumb Code   180  app.o
+    BigFilter                                 0x08001001   Thumb Code  1024  app.o
+    g_big_buffer                              0x20000000   Data         2048  app.o
+    osKernelStart                             0x08002001   Thumb Code   420  freertos.o
+
+Program Size: Code=45000 RO-data=2800 RW-data=640 ZI-data=18000
