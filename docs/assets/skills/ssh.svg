@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">SSH · 远程操作网关结构</title><desc id="desc">标准 OpenSSH 配置提供 Host 别名、认证与跳板信息</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">SSH · 远程操作网关结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">标准 OpenSSH 配置提供 Host 别名、认证与跳板信息</text>
+<polyline points="510,287.5 550.0,287.5 550.0,287.5 590,287.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,287.5 577.0,281.5 577.0,293.5" fill="#718197"/>
+<polyline points="1010,287.5 1050.0,287.5 1050.0,287.5 1090,287.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,287.5 1077.0,281.5 1077.0,293.5" fill="#718197"/>
+<polyline points="1300.0,365 1300.0,477.5 300.0,477.5 300.0,590" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="300.0,590 306.0,577.0 294.0,577.0" fill="#718197"/>
+<polyline points="1300.0,365 1300.0,477.5 800.0,477.5 800.0,590" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,590 806.0,577.0 794.0,577.0" fill="#718197"/>
+<polyline points="1300.0,365 1300.0,477.5 1300.0,477.5 1300.0,590" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,590 1306.0,577.0 1294.0,577.0" fill="#718197"/>
+<rect x="90" y="210" width="420" height="155" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">Host 别名 / SSH config</text>
+<text x="112" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">HostName / User / Port</text>
+<text x="112" y="323.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">密钥 / ProxyJump</text>
+<rect x="590" y="210" width="420" height="155" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">ssh_config / 目标解析</text>
+<text x="612" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">list / find / resolve / show</text>
+<text x="612" y="323.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">确定唯一远端</text>
+<rect x="1090" y="210" width="420" height="155" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">OpenSSH ↔ 远程设备</text>
+<text x="1112" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">身份认证 / 连接</text>
+<text x="1112" y="323.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Linux 开发板或服务器</text>
+<rect x="90" y="590" width="420" height="180" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">ssh_exec / ssh_probe</text>
+<text x="112" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">远程命令 / 固定只读探测</text>
+<text x="112" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">标准输出 / 退出码</text>
+<rect x="590" y="590" width="420" height="180" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">ssh_transfer</text>
+<text x="612" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">SCP 上传 / 下载</text>
+<text x="612" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">本地与远端文件路径</text>
+<rect x="1090" y="590" width="420" height="180" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">ssh_tunnel</text>
+<text x="1112" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">本地端口转发</text>
+<text x="1112" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">本地端口 ↔ 远端服务</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">持续交互 Shell 使用 terminal；本后端提供命令、传输、探测与隧道入口。</text>
+</svg>

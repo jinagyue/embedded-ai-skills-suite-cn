@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Keil MDK · 构建后端结构</title><desc id="desc">工程发现、配置选择、构建执行与产物记录的调用结构</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">Keil MDK · 构建后端结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">工程发现、配置选择、构建执行与产物记录的调用结构</text>
+<polyline points="510,302.5 550.0,302.5 550.0,302.5 590,302.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,302.5 577.0,296.5 577.0,308.5" fill="#718197"/>
+<polyline points="1010,302.5 1050.0,302.5 1050.0,302.5 1090,302.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,302.5 1077.0,296.5 1077.0,308.5" fill="#718197"/>
+<polyline points="1300.0,380 1300.0,492.5 1300.0,492.5 1300.0,605" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,605 1306.0,592.0 1294.0,592.0" fill="#718197"/>
+<polyline points="1090,690.0 1050.0,690.0 1050.0,690.0 1010,690.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1010,690.0 1023.0,696.0 1023.0,684.0" fill="#718197"/>
+<polyline points="590,690.0 550.0,690.0 550.0,690.0 510,690.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="510,690.0 523.0,696.0 523.0,684.0" fill="#718197"/>
+<rect x="90" y="225" width="420" height="155" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="269.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#596778">.uvprojx / .uvproj / .uvmpw</text>
+<text x="112" y="304.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">工程文件 / Target</text>
+<rect x="590" y="225" width="420" height="155" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="270.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">工程与目标选择</text>
+<text x="612" y="304.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">CLI / config / state</text>
+<text x="612" y="338.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">scan + 目标枚举</text>
+<rect x="1090" y="225" width="420" height="155" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1112" y="270.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">UV4.exe / Keil 工具链</text>
+<text x="1112" y="304.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">build / rebuild / clean</text>
+<rect x="1090" y="605" width="420" height="170" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="650.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">构建结果与日志</text>
+<text x="1112" y="684.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">错误 / 警告 / 日志</text>
+<text x="1112" y="718.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">AXF / HEX / BIN 等产物路径</text>
+<rect x="590" y="605" width="420" height="170" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="612" y="650.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">.embeddedskills/</text>
+<text x="612" y="684.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">config.json：已选参数</text>
+<text x="612" y="718.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">state.json：产物与执行状态</text>
+<rect x="90" y="605" width="420" height="170" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="112" y="650.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">后续分析 / 工具调用</text>
+<text x="112" y="684.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">ELF / MAP / size</text>
+<text x="112" y="718.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">由 workflow 选择后续阶段</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">图示为后端能力结构；图中工具路径与构建产物由本机环境和目标工程确定。</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">AI 自动调试 · 证据闭环</title><desc id="desc">先建立证据，再定位与最小修改；每次修复返回构建与采证</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">AI 自动调试 · 证据闭环</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">先建立证据，再定位与最小修改；每次修复返回构建与采证</text>
+<polyline points="510,322.5 550.0,322.5 550.0,322.5 590,322.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,322.5 577.0,316.5 577.0,328.5" fill="#718197"/>
+<polyline points="1010,322.5 1050.0,322.5 1050.0,322.5 1090,322.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,322.5 1077.0,316.5 1077.0,328.5" fill="#718197"/>
+<polyline points="1300.0,410 1300.0,477.5 1300.0,477.5 1300.0,545" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,545 1306.0,532.0 1294.0,532.0" fill="#718197"/>
+<polyline points="1090,632.5 1050.0,632.5 1050.0,632.5 1010,632.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1010,632.5 1023.0,638.5 1023.0,626.5" fill="#718197"/>
+<polyline points="590,632.5 550.0,632.5 550.0,632.5 510,632.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="510,632.5 523.0,638.5 523.0,626.5" fill="#718197"/>
+<polyline points="90,632 48,632 48,322 90,322" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="90,322 77.0,316.0 77.0,328.0" fill="#718197"/>
+<rect x="90" y="235" width="420" height="175" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">01 静态工程模型</text>
+<text x="112" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">源码 / .ioc / 分层 / RTOS</text>
+<text x="112" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">GPIO / IRQ / DMA 一致性</text>
+<rect x="590" y="235" width="420" height="175" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">02 构建与固件分析</text>
+<text x="612" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Build → MAP / ELF</text>
+<text x="612" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Flash / RAM / 符号</text>
+<rect x="1090" y="235" width="420" height="175" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">03 可选设备阶段</text>
+<text x="1112" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">按任务选择 Flash / Debug</text>
+<text x="1112" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">串口 / RTT / GDB 采证</text>
+<rect x="1090" y="545" width="420" height="175" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1112" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">04 运行时分析</text>
+<text x="1112" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Task / Stack HWM / Heap</text>
+<text x="1112" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">日志与异常记录</text>
+<rect x="590" y="545" width="420" height="175" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="612" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">05 故障定位</text>
+<text x="612" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Fault 寄存器 / PC / LR</text>
+<text x="612" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">addr2line + ELF → 源码</text>
+<rect x="90" y="545" width="420" height="175" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">06 最小修改与复核</text>
+<text x="112" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">AI 修改 → 重新构建</text>
+<text x="112" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">重新采证 / 比较差异</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">默认不自动烧录；循环中的设备阶段仅按任务授权与可用证据执行。</text>
+</svg>

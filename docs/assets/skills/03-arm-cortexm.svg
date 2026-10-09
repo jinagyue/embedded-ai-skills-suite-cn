@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Cortex-M · 启动与异常结构</title><desc id="desc">启动链路、异常证据与 DMA / Cache 一致性三个关注面</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">Cortex-M · 启动与异常结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">启动链路、异常证据与 DMA / Cache 一致性三个关注面</text>
+<polyline points="510,272.5 550.0,272.5 550.0,272.5 590,272.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,272.5 577.0,266.5 577.0,278.5" fill="#718197"/>
+<polyline points="1010,272.5 1050.0,272.5 1050.0,272.5 1090,272.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,272.5 1077.0,266.5 1077.0,278.5" fill="#718197"/>
+<polyline points="1300.0,340 1300.0,425.0 1300.0,425.0 1300.0,510" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,510 1306.0,497.0 1294.0,497.0" fill="#718197"/>
+<polyline points="1090,600.0 1050.0,600.0 1050.0,600.0 1010,600.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1010,600.0 1023.0,606.0 1023.0,594.0" fill="#718197"/>
+<rect x="90" y="205" width="420" height="135" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="250.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">Reset / 向量表</text>
+<text x="112" y="284.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Reset_Handler 入口</text>
+<rect x="590" y="205" width="420" height="135" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="250.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">运行环境初始化</text>
+<text x="612" y="284.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">.data / .bss / SystemInit</text>
+<rect x="1090" y="205" width="420" height="135" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="1112" y="250.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">main / Task / ISR</text>
+<text x="1112" y="284.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">NVIC 优先级 / 延后处理</text>
+<rect x="1090" y="510" width="420" height="180" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="555.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">Fault 现场</text>
+<text x="1112" y="589.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">PC / LR / xPSR / MSP / PSP</text>
+<text x="1112" y="623.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">CFSR / HFSR / BFAR / MMFAR</text>
+<rect x="590" y="510" width="420" height="180" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="555.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">解码与符号定位</text>
+<text x="612" y="589.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">HardFault Decoder</text>
+<text x="612" y="623.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">addr2line + ELF → 源码行</text>
+<rect x="90" y="510" width="420" height="180" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="112" y="555.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">内存与外设一致性</text>
+<text x="112" y="589.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">栈边界 / MPU / Cache</text>
+<text x="112" y="623.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">DMA：对齐 / clean / invalidate</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">RTOS ISR API 受中断优先级约束；有 Cache 的平台需处理 DMA 缓冲区一致性。</text>
+</svg>

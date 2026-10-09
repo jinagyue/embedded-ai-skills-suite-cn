@@ -1,5 +1,7 @@
 # 嵌入式调试与 Bring-up
 
+![Bring-up · 逐层验证结构](../docs/assets/skills/08-debugging-bringup.png)
+
 ## 新板顺序
 ```text
 电源/复位 → SWD → 时钟 → GPIO心跳 → 调试串口 → Timer/Tick

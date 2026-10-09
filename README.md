@@ -1,8 +1,12 @@
 # 嵌入式 AI Skills 中文套件：单入口整合版
 
+![嵌入式技能套件单入口架构](docs/assets/skills/embeddedskills.png)
+
 面向 STM32、ARM Cortex-M、FreeRTOS/CMSIS-RTOS2 的开发与调试技能。基于 V0.4 中文套件整合，**外部只注册 `embeddedskills` 一个技能入口**，内部按需读取 14 个专业模块和 12 个工具后端。
 
 专业模块覆盖架构、C99、CubeMX/外设、协议、FreeRTOS、重构、可靠性、静态分析、MAP/ELF、HardFault 和运行时日志。工具后端提供 Keil/EIDE/CMake ARM GCC、J-Link/OpenOCD/probe-rs、串口、CAN、网络和 SSH/交互终端。
+
+[查看全部 27 张结构图与架构图](docs/SKILL_GALLERY.md) · [查看图件设计说明与提示词](docs/IMAGE_PROMPTS.md)
 
 ## 安装
 

@@ -1,5 +1,7 @@
 # 嵌入式开发总工作流
 
+![嵌入式开发 · 总流程](../docs/assets/skills/00-embedded-workflow.png)
+
 ## 什么时候使用
 当用户要求新建 STM32 工程、增加外设/协议/业务、重构旧工程、设计 FreeRTOS、排查 HardFault/复位/丢包/死锁，或要求 AI 自动构建与调试时使用。
 

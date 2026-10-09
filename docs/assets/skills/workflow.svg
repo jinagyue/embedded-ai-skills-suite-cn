@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Workflow · 后端编排结构</title><desc id="desc">发现、选择、串联与聚合；通过子进程复用已有后端</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">Workflow · 后端编排结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">发现、选择、串联与聚合；通过子进程复用已有后端</text>
+<polyline points="510,255.0 550.0,255.0 550.0,260.0 590,260.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,260.0 577.0,254.0 577.0,266.0" fill="#718197"/>
+<polyline points="1010,260.0 1050.0,260.0 1050.0,255.0 1090,255.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,255.0 1077.0,249.0 1077.0,261.0" fill="#718197"/>
+<polyline points="800.0,340 800.0,397.5 300.0,397.5 300.0,455" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="300.0,455 306.0,442.0 294.0,442.0" fill="#718197"/>
+<polyline points="800.0,340 800.0,397.5 800.0,397.5 800.0,455" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,455 806.0,442.0 794.0,442.0" fill="#718197"/>
+<polyline points="800.0,340 800.0,397.5 1300.0,397.5 1300.0,455" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,455 1306.0,442.0 1294.0,442.0" fill="#718197"/>
+<polyline points="510,537.5 550.0,537.5 550.0,537.5 590,537.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,537.5 577.0,531.5 577.0,543.5" fill="#718197"/>
+<rect x="503.0" y="420" width="94.0" height="29" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<text x="508.0" y="441.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#526175">固件路径</text>
+<rect x="90" y="180" width="420" height="150" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="225.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">配置与阶段请求</text>
+<text x="112" y="259.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">CLI → preferred_* → 自动发现</text>
+<text x="112" y="293.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">.embeddedskills/config.json</text>
+<rect x="590" y="180" width="420" height="160" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="221.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2463b4">workflow_plan / workflow_run</text>
+<text x="612" y="259.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">plan / build / build-flash</text>
+<text x="612" y="293.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">build-debug / observe</text>
+<text x="612" y="327.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">diagnose</text>
+<rect x="1090" y="180" width="420" height="150" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="225.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">执行结果与 state.json</text>
+<text x="1112" y="259.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">阶段状态 / 产物路径</text>
+<text x="1112" y="293.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">聚合底层结构化错误</text>
+<rect x="90" y="455" width="420" height="165" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="112" y="500.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">构建后端</text>
+<text x="112" y="534.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Keil / GCC / EIDE</text>
+<text x="112" y="568.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">成功后产生固件路径</text>
+<rect x="590" y="455" width="420" height="165" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="612" y="500.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">下载 / 调试后端</text>
+<text x="612" y="534.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">J-Link / OpenOCD / probe-rs</text>
+<text x="612" y="568.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">按阶段请求选择</text>
+<rect x="1090" y="455" width="420" height="165" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="500.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">观测候选</text>
+<text x="1112" y="534.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">J-Link RTT / SWO</text>
+<text x="1112" y="568.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">OpenOCD semihosting / ITM</text>
+<text x="1112" y="602.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">probe-rs RTT</text>
+<rect x="290" y="760" width="1020" height="110" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="312" y="805.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">阶段串联边界</text>
+<text x="312" y="839.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">构建失败停止后续设备阶段；单次构建直接使用对应后端即可。</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">observe 生成推荐观测命令；编排器内部不长时间占用观测通道。</text>
+</svg>

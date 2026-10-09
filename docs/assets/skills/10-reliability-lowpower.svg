@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">可靠性与低功耗 · 状态结构</title><desc id="desc">将失败显式建模；由健康任务统一管理看门狗</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">可靠性与低功耗 · 状态结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">将失败显式建模；由健康任务统一管理看门狗</text>
+<polyline points="310,255.0 350.0,255.0 350.0,255.0 390,255.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="390,255.0 377.0,249.0 377.0,261.0" fill="#718197"/>
+<polyline points="610,255.0 650.0,255.0 650.0,255.0 690,255.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="690,255.0 677.0,249.0 677.0,261.0" fill="#718197"/>
+<polyline points="910,255.0 950.0,255.0 950.0,255.0 990,255.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="990,255.0 977.0,249.0 977.0,261.0" fill="#718197"/>
+<polyline points="1210,255.0 1250.0,255.0 1250.0,255.0 1290,255.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1290,255.0 1277.0,249.0 1277.0,261.0" fill="#718197"/>
+<polyline points="1400,305 1400,370 500,370 500,305" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="500,305 494.0,318.0 506.0,318.0" fill="#718197"/>
+<polyline points="510,537.5 550.0,537.5 550.0,537.5 590,537.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,537.5 577.0,531.5 577.0,543.5" fill="#718197"/>
+<polyline points="1010,537.5 1050.0,537.5 1050.0,537.5 1090,537.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,537.5 1077.0,531.5 1077.0,543.5" fill="#718197"/>
+<rect x="90" y="205" width="220" height="100" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="248.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">INIT</text>
+<rect x="390" y="205" width="220" height="100" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="412" y="248.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">ONLINE</text>
+<rect x="690" y="205" width="220" height="100" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="712" y="248.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#a96812">DEGRADED</text>
+<rect x="990" y="205" width="220" height="100" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1012" y="248.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">OFFLINE</text>
+<rect x="1290" y="205" width="220" height="100" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1312" y="248.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#7150a3">RECOVERING</text>
+<rect x="90" y="460" width="420" height="155" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="505.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">关键 Task 活性证明</text>
+<text x="112" y="539.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">计数 / 时间戳 / 完成信号</text>
+<rect x="590" y="460" width="420" height="155" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="505.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">HealthTask</text>
+<text x="612" y="539.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">汇总关键任务状态</text>
+<text x="612" y="573.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">符合健康条件才喂狗</text>
+<rect x="1090" y="460" width="420" height="155" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="505.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">Watchdog</text>
+<text x="1112" y="539.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">系统停滞 → 复位</text>
+<text x="1112" y="573.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">记录复位原因</text>
+<rect x="220" y="735" width="1160" height="135" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="242" y="780.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">电源状态与恢复路径</text>
+<text x="242" y="814.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">RUN / SLEEP / STOP / OFF</text>
+<text x="242" y="848.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">资源状态 + 唤醒源 → 时钟恢复 → 外设重新校验</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">唤醒后恢复时钟并复核外设；超时、降级与恢复条件由目标系统明确规定。</text>
+</svg>

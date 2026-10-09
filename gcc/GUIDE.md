@@ -1,5 +1,7 @@
 # GCC 嵌入式工程构建
 
+![CMake / ARM GCC · 构建结构](../docs/assets/skills/gcc.png)
+
 本 skill 提供基于 CMake + arm-none-eabi-gcc 的嵌入式工程发现、preset 枚举、配置生成、增量编译、全量重建、清理和 ELF 大小分析能力。
 
 范围说明：当前仅支持 **CMake 型** GCC 嵌入式工程，不覆盖纯 `Makefile` 工程。

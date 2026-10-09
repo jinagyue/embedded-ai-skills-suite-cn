@@ -1,5 +1,7 @@
 # Workflow 编排层
 
+![Workflow · 后端编排结构](../docs/assets/skills/workflow.png)
+
 本 skill 不重复实现底层逻辑，只做发现、选择、串联和聚合。
 
 支持 **Keil** / **GCC** / **EIDE** 三种构建后端，以及 **jlink** / **openocd** / **probe-rs** 三种 flash/debug/observe 后端。

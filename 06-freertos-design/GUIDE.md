@@ -1,5 +1,7 @@
 # FreeRTOS 系统设计
 
+![FreeRTOS · Task 与 IPC 结构](../docs/assets/skills/06-freertos-design.png)
+
 ## Task 不按外设划分
 不推荐：`UART1_Task/ADC_Task/GPIO_Task`。优先按独立并发活动：`CommTask/MeasureTask/UITask/StorageTask/HealthTask`。
 

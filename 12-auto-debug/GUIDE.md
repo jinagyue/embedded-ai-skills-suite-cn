@@ -1,5 +1,7 @@
 # AI 自动调试闭环
 
+![AI 自动调试 · 证据闭环](../docs/assets/skills/12-auto-debug.png)
+
 ## 安全原则
 默认 **禁止自动烧录**。只有用户明确允许或项目配置 `allow_flash=true` 才执行 Flash。
 

@@ -1,5 +1,7 @@
 # ARM Cortex-M 平台知识
 
+![Cortex-M · 启动与异常结构](../docs/assets/skills/03-arm-cortexm.png)
+
 ## 重点
 - Reset → 向量表 → `Reset_Handler` → `.data/.bss` → `SystemInit` → `main`。
 - Cortex-M 中断优先级数值越小，逻辑优先级越高。

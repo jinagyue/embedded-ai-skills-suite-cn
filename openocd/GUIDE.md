@@ -1,5 +1,7 @@
 # OpenOCD 下载与调试
 
+![OpenOCD · 下载与调试结构](../docs/assets/skills/openocd.png)
+
 本 skill 提供 OpenOCD 的探针探测、固件烧录、Flash 擦除、GDB Server 启动、目标复位、
 Telnet 在线调试、GDB 源码级调试和 Semihosting 输出捕获能力。
 

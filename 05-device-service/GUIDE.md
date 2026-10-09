@@ -1,5 +1,7 @@
 # Device / Protocol / Service 设计
 
+![Device / Protocol / Service · 职责结构](../docs/assets/skills/05-device-service.png)
+
 ## Device
 具体物理器件，例如 W25Q64、ADS8688、MPU6050、Nextion、4G DTU。Device 可依赖 BSP，不负责产品流程。
 

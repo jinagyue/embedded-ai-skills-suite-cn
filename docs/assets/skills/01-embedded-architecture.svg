@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">嵌入式软件 · 五层架构</title><desc id="desc">箭头表示上层对下层的依赖；职责以实现与资源所有权为依据</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">嵌入式软件 · 五层架构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">箭头表示上层对下层的依赖；职责以实现与资源所有权为依据</text>
+<polyline points="565.0,288 565.0,305.5 565.0,305.5 565.0,323" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,323 571.0,310.0 559.0,310.0" fill="#718197"/>
+<polyline points="565.0,421 565.0,438.5 565.0,438.5 565.0,456" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,456 571.0,443.0 559.0,443.0" fill="#718197"/>
+<polyline points="565.0,554 565.0,571.5 565.0,571.5 565.0,589" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,589 571.0,576.0 559.0,576.0" fill="#718197"/>
+<polyline points="565.0,687 565.0,704.5 565.0,704.5 565.0,722" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,722 571.0,709.0 559.0,709.0" fill="#718197"/>
+<rect x="90" y="190" width="950" height="98" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="235.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">L5  App + RTOS 任务编排</text>
+<text x="112" y="269.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">产品流程 / 状态机 / 任务入口</text>
+<rect x="90" y="323" width="950" height="98" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="368.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">L4  Business Service</text>
+<text x="112" y="402.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">测量 / 存储 / 通信 / 电源 / UI 能力</text>
+<rect x="90" y="456" width="950" height="98" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="112" y="501.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">L3  Device / Protocol / BSP Service</text>
+<text x="112" y="535.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">具体器件 / 协议语义 / 稳定数据通道</text>
+<rect x="90" y="589" width="950" height="98" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="112" y="634.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">L2  BSP Driver</text>
+<text x="112" y="668.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">GPIO / UART / SPI / I2C / ADC / TIM / DMA / CAN</text>
+<rect x="90" y="722" width="950" height="98" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="767.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">L1  Vendor / CubeMX</text>
+<text x="112" y="801.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">CMSIS / HAL / LL / Startup / IRQ / 生成初始化</text>
+<rect x="1120" y="245" width="390" height="410" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1142" y="288.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">横向公共资源</text>
+<text x="1142" y="324.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Middlewares/</text>
+<text x="1142" y="358.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Common/</text>
+<text x="1142" y="392.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Config/</text>
+<text x="1142" y="426.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Tests/</text>
+<text x="1142" y="460.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247"></text>
+<text x="1142" y="494.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">复核：include / 调用</text>
+<text x="1142" y="528.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">HAL 泄漏 / 构建目标</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">APP 不直接调用 HAL；禁止反向 include；arch-map.json 记录人工确认的语义角色。</text>
+</svg>

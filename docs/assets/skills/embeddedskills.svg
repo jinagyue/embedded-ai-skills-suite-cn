@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1360" viewBox="0 0 1600 1360" role="img" aria-labelledby="title desc">
+<title id="title">嵌入式技能套件 · 单入口架构</title><desc id="desc">任务按需路由到内部 GUIDE.md，再调用对应脚本；外部只注册一个 SKILL.md</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">嵌入式技能套件 · 单入口架构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">任务按需路由到内部 GUIDE.md，再调用对应脚本；外部只注册一个 SKILL.md</text>
+<rect x="65" y="350" width="1470" height="350" rx="16" fill="#fafbfd" stroke="#dbe2eb" stroke-width="2"/>
+<text x="90" y="395.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">专业模块层 / 14 个 GUIDE.md</text>
+<rect x="65" y="755" width="1470" height="325" rx="16" fill="#fafbfd" stroke="#dbe2eb" stroke-width="2"/>
+<text x="90" y="800.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">执行后端层 / 12 个 GUIDE.md + scripts/</text>
+<polyline points="800,295 800,410 260,410 260,425" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="260,425 266.0,412.0 254.0,412.0" fill="#718197"/>
+<polyline points="800,295 800,410 620,410 620,425" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="620,425 626.0,412.0 614.0,412.0" fill="#718197"/>
+<polyline points="800,295 800,410 980,410 980,425" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="980,425 986.0,412.0 974.0,412.0" fill="#718197"/>
+<polyline points="800,295 800,410 1340,410 1340,425" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1340,425 1346.0,412.0 1334.0,412.0" fill="#718197"/>
+<polyline points="440,232 35,232 35,720 800,720 800,815 260,815 260,835" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="260,835 266.0,822.0 254.0,822.0" fill="#718197"/>
+<polyline points="440,232 35,232 35,720 800,720 800,815 620,815 620,835" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="620,835 626.0,822.0 614.0,822.0" fill="#718197"/>
+<polyline points="440,232 35,232 35,720 800,720 800,815 980,815 980,835" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="980,835 986.0,822.0 974.0,822.0" fill="#718197"/>
+<polyline points="440,232 35,232 35,720 800,720 800,815 1340,815 1340,835" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="1340,835 1346.0,822.0 1334.0,822.0" fill="#718197"/>
+<polyline points="260.0,1030 260.0,1085.0 800.0,1085.0 800.0,1140" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,1140 806.0,1127.0 794.0,1127.0" fill="#718197"/>
+<polyline points="620.0,1030 620.0,1085.0 800.0,1085.0 800.0,1140" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,1140 806.0,1127.0 794.0,1127.0" fill="#718197"/>
+<polyline points="980.0,1030 980.0,1085.0 800.0,1085.0 800.0,1140" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,1140 806.0,1127.0 794.0,1127.0" fill="#718197"/>
+<polyline points="1340.0,1030 1340.0,1085.0 800.0,1085.0 800.0,1140" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,1140 806.0,1127.0 794.0,1127.0" fill="#718197"/>
+<rect x="440" y="170" width="720" height="125" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="462" y="215.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">embeddedskills / SKILL.md</text>
+<text x="462" y="249.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">用户任务 → 专业模块选择 → 工具后端选择</text>
+<rect x="95" y="425" width="330" height="225" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="117" y="468.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">设计与平台</text>
+<text x="117" y="504.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">00 总工作流</text>
+<text x="117" y="538.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">01 五层架构</text>
+<text x="117" y="572.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">02 C99 实现</text>
+<text x="117" y="606.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">03 Cortex-M</text>
+<rect x="455" y="425" width="330" height="225" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="477" y="468.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">外设与并发</text>
+<text x="477" y="504.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">04 STM32 / BSP</text>
+<text x="477" y="538.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">05 Device / Service</text>
+<text x="477" y="572.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">06 FreeRTOS / IPC</text>
+<text x="477" y="606.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">07 通信协议</text>
+<rect x="815" y="425" width="330" height="225" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="837" y="468.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">验证与演进</text>
+<text x="837" y="504.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">08 Bring-up / 调试</text>
+<text x="837" y="538.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">09 评审与测试</text>
+<text x="837" y="572.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">10 可靠性 / 低功耗</text>
+<text x="837" y="606.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">11 渐进重构</text>
+<rect x="1175" y="425" width="330" height="225" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="1197" y="468.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">证据与闭环</text>
+<text x="1197" y="504.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">12 AI 自动调试</text>
+<text x="1197" y="538.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">13 固件分析工具箱</text>
+<rect x="95" y="835" width="330" height="195" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="117" y="878.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">构建</text>
+<text x="117" y="914.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Keil MDK</text>
+<text x="117" y="948.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">CMake / ARM GCC</text>
+<text x="117" y="982.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">EIDE</text>
+<rect x="455" y="835" width="330" height="195" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="477" y="878.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">下载与调试</text>
+<text x="477" y="914.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">J-Link</text>
+<text x="477" y="948.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">OpenOCD</text>
+<text x="477" y="982.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">probe-rs</text>
+<rect x="815" y="835" width="330" height="195" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="837" y="878.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">通信与连接</text>
+<text x="837" y="914.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">serial / CAN / net</text>
+<text x="837" y="948.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">SSH / terminal</text>
+<rect x="1175" y="835" width="330" height="195" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1197" y="878.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#117a68">阶段编排</text>
+<text x="1197" y="914.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">workflow</text>
+<text x="1197" y="948.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">发现 → 选择 → 串联</text>
+<text x="1197" y="982.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">聚合结果与状态</text>
+<rect x="210" y="1140" width="1180" height="105" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="232" y="1185.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">工程侧证据与状态</text>
+<text x="232" y="1219.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">.embedded-ai/：分析报告      .embeddedskills/：配置 / 状态 / 执行日志</text>
+<rect x="65" y="1283" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="1315.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">实线：专业路由与状态流。虚线：工具选用。专业模块给出方法，工具后端执行命令。</text>
+</svg>

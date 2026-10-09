@@ -1,5 +1,7 @@
 # SSH Skill
 
+![SSH · 远程操作网关结构](../docs/assets/skills/ssh.png)
+
 ## 定位
 
 这是一个轻量 SSH 操作网关。它不维护独立服务器数据库，默认只读取和写入标准 OpenSSH 配置：

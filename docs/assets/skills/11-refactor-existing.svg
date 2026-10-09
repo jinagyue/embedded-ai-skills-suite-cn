@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">存量工程 · 渐进重构路径</title><desc id="desc">每次迁移一条可验证纵向链路，保留旧路径与回退点</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">存量工程 · 渐进重构路径</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">每次迁移一条可验证纵向链路，保留旧路径与回退点</text>
+<polyline points="510,322.5 550.0,322.5 550.0,322.5 590,322.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,322.5 577.0,316.5 577.0,328.5" fill="#718197"/>
+<polyline points="1010,322.5 1050.0,322.5 1050.0,322.5 1090,322.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,322.5 1077.0,316.5 1077.0,328.5" fill="#718197"/>
+<polyline points="1300.0,410 1300.0,477.5 1300.0,477.5 1300.0,545" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,545 1306.0,532.0 1294.0,532.0" fill="#718197"/>
+<polyline points="1090,632.5 1050.0,632.5 1050.0,632.5 1010,632.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1010,632.5 1023.0,638.5 1023.0,626.5" fill="#718197"/>
+<polyline points="590,632.5 550.0,632.5 550.0,632.5 510,632.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="510,632.5 523.0,638.5 523.0,626.5" fill="#718197"/>
+<polyline points="90,632 48,632 48,322 90,322" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="90,322 77.0,316.0 77.0,328.0" fill="#718197"/>
+<rect x="90" y="235" width="420" height="175" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">01 现状盘点</text>
+<text x="112" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">职责 / 调用 / HAL / RTOS</text>
+<text x="112" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">共享状态与目标层</text>
+<rect x="590" y="235" width="420" height="175" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="612" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">02 抽出 Protocol</text>
+<text x="612" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">纯 parser / 帧与语义</text>
+<text x="612" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">保留协议复现用例</text>
+<rect x="1090" y="235" width="420" height="175" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">03 抽出 Service</text>
+<text x="1112" y="314.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">业务能力与错误路径</text>
+<text x="1112" y="348.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Task 调用能力接口</text>
+<rect x="1090" y="545" width="420" height="175" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">04 封装 BSP / Device</text>
+<text x="1112" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">板级资源 / 具体器件</text>
+<text x="1112" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">稳定 API 隔离句柄</text>
+<rect x="590" y="545" width="420" height="175" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">05 整理 Task 与状态</text>
+<text x="612" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">等待事件 / 调用 APP</text>
+<text x="612" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">消除可写 extern</text>
+<rect x="90" y="545" width="420" height="175" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="590.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">06 门禁与回归</text>
+<text x="112" y="624.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">扫描 / 构建 / 测试</text>
+<text x="112" y="658.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">验证后调整目录</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">循环箭头：每个迁移步骤都复核行为与依赖，再进入下一条链路。</text>
+</svg>

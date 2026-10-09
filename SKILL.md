@@ -5,6 +5,8 @@ description: 中文 STM32、ARM Cortex-M、FreeRTOS/CMSIS-RTOS2 开发与调试�
 
 # 嵌入式 AI 开发与调试
 
+![嵌入式技能套件 · 单入口架构](docs/assets/skills/embeddedskills.png)
+
 一个外部技能入口，内部包含 V0.4 中文套件的 14 个专业模块和 12 个工具后端。根据任务按需读取内部说明，调用已有工具。内部模块是资源，不需要分别安装或注册。
 
 ## 专业模块路由

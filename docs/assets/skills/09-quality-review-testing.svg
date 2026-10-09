@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">质量验证 · 测试层级结构</title><desc id="desc">测试范围从纯逻辑扩展到真实外设与系统环境</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">质量验证 · 测试层级结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">测试范围从纯逻辑扩展到真实外设与系统环境</text>
+<polyline points="565.0,288 565.0,305.5 565.0,305.5 565.0,323" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,323 571.0,310.0 559.0,310.0" fill="#718197"/>
+<polyline points="565.0,421 565.0,438.5 565.0,438.5 565.0,456" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,456 571.0,443.0 559.0,443.0" fill="#718197"/>
+<polyline points="565.0,554 565.0,571.5 565.0,571.5 565.0,589" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,589 571.0,576.0 559.0,576.0" fill="#718197"/>
+<polyline points="565.0,687 565.0,704.5 565.0,704.5 565.0,722" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,722 571.0,709.0 559.0,709.0" fill="#718197"/>
+<rect x="90" y="190" width="950" height="98" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="235.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">Host Unit Test</text>
+<text x="112" y="269.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Protocol / 算法 / 状态机 / Common</text>
+<rect x="90" y="323" width="950" height="98" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="368.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">Integration</text>
+<text x="112" y="402.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Service + Fake Device / BSP</text>
+<rect x="90" y="456" width="950" height="98" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="501.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">Target Test</text>
+<text x="112" y="535.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">真实 MCU 外设</text>
+<rect x="90" y="589" width="950" height="98" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="634.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">HIL</text>
+<text x="112" y="668.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">实际板卡与仪器</text>
+<rect x="90" y="722" width="950" height="98" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="112" y="767.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">Regression</text>
+<text x="112" y="801.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">保存复现用例，持续比较修复前后行为</text>
+<rect x="1120" y="245" width="390" height="410" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1142" y="288.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">跨阶段评审与门禁</text>
+<text x="1142" y="324.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">功能与边界 / 并发</text>
+<text x="1142" y="358.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">内存 / 栈 / 硬件资源</text>
+<text x="1142" y="392.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">错误处理 / 架构依赖</text>
+<text x="1142" y="426.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247"></text>
+<text x="1142" y="460.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">构建后：ELF / MAP</text>
+<text x="1142" y="494.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Flash / RAM / 段增长</text>
+<text x="1142" y="528.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">最大函数 / 最大对象</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">层级之间表示验证范围扩展；图中并不声明已完成目标工程的各级测试。</text>
+</svg>

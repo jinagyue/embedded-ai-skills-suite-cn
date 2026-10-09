@@ -1,5 +1,7 @@
 # 嵌入式通信与协议
 
+![嵌入式通信 · 分层链路](../docs/assets/skills/07-embedded-protocols.png)
+
 ## 推荐链路
 ```text
 APP/Service

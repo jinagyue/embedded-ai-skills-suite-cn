@@ -1,5 +1,7 @@
 # Keil MDK 工程构建
 
+![Keil MDK · 构建后端结构](../docs/assets/skills/keil.png)
+
 本 skill 提供 Keil MDK 工程的发现、Target 枚举、构建、重建、清理能力，并返回可供 `jlink/openocd` 继续使用的固件产物路径。`flash` 仅作为兼容入口保留。
 
 ## 配置

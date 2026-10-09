@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">OpenOCD · 下载与调试结构</title><desc id="desc">主机包装脚本通过调试后端访问目标 MCU，聚合执行结果与观测数据</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">OpenOCD · 下载与调试结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">主机包装脚本通过调试后端访问目标 MCU，聚合执行结果与观测数据</text>
+<polyline points="510,290.0 550.0,290.0 550.0,290.0 590,290.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,290.0 577.0,284.0 577.0,296.0" fill="#718197"/>
+<polyline points="1010,290.0 1050.0,290.0 1050.0,290.0 1090,290.0" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,290.0 1077.0,284.0 1077.0,296.0" fill="#718197"/>
+<polyline points="1300.0,370 1300.0,480.0 1300.0,480.0 1300.0,590" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,590 1306.0,577.0 1294.0,577.0" fill="#718197"/>
+<polyline points="1090,682.5 1050.0,682.5 1050.0,682.5 1010,682.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1010,682.5 1023.0,688.5 1023.0,676.5" fill="#718197"/>
+<polyline points="590,682.5 550.0,682.5 550.0,682.5 510,682.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="510,682.5 523.0,688.5 523.0,676.5" fill="#718197"/>
+<rect x="90" y="210" width="420" height="160" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">目标与输入</text>
+<text x="112" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">芯片 / 探针 / 接口 / 地址</text>
+<text x="112" y="323.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">固件文件 / interface + target</text>
+<rect x="590" y="210" width="420" height="160" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">Python 后端脚本</text>
+<text x="612" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">参数解析 / 子进程调用</text>
+<text x="612" y="323.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">统一 JSON 与日志</text>
+<rect x="1090" y="210" width="420" height="160" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1112" y="255.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">OpenOCD / GDB Server</text>
+<text x="1112" y="289.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">下载 / 读内存 / 执行控制</text>
+<rect x="1090" y="590" width="420" height="185" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="1112" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">探针 → 目标 MCU</text>
+<text x="1112" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">调试适配器 / 目标配置</text>
+<text x="1112" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Flash / RAM / CPU 寄存器</text>
+<rect x="590" y="590" width="420" height="185" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">观测与源码调试</text>
+<text x="612" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">GDB / 寄存器 / 断点</text>
+<text x="612" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">semihosting / ITM</text>
+<rect x="90" y="590" width="420" height="185" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="635.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">诊断结果</text>
+<text x="112" y="669.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">寄存器 / 内存 / backtrace</text>
+<text x="112" y="703.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">运行日志与阶段状态</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">下载、复位、写内存等设备动作按本次任务选择；图中不表示已连接或验证设备。</text>
+</svg>

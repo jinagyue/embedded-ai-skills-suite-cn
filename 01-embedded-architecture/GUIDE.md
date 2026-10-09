@@ -1,5 +1,7 @@
 # 嵌入式软件架构
 
+![嵌入式软件 · 五层架构](../docs/assets/skills/01-embedded-architecture.png)
+
 ## 默认五层模型
 ```text
 L5  App + RTOS任务编排       产品流程、状态机、任务入口

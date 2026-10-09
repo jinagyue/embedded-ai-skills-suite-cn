@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">C99 模块 · 接口与状态结构</title><desc id="desc">公共契约与私有实现分开；调用者通过状态码接收结果</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">C99 模块 · 接口与状态结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">公共契约与私有实现分开；调用者通过状态码接收结果</text>
+<polyline points="450,367.5 507.5,367.5 507.5,367.5 565,367.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565,367.5 552.0,361.5 552.0,373.5" fill="#718197"/>
+<polyline points="1005,367.5 1062.5,367.5 1062.5,367.5 1120,367.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1120,367.5 1107.0,361.5 1107.0,373.5" fill="#718197"/>
+<polyline points="1315.0,455 1315.0,532.5 1315.0,532.5 1315.0,610" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1315.0,610 1321.0,597.0 1309.0,597.0" fill="#718197"/>
+<polyline points="1315.0,455 1315.0,532.5 785.0,532.5 785.0,610" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="785.0,610 791.0,597.0 779.0,597.0" fill="#718197"/>
+<polyline points="565,697 490,697 490,505 270,505 270,455" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="270,455 264.0,468.0 276.0,468.0" fill="#718197"/>
+<rect x="90" y="280" width="360" height="175" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="323.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#2463b4">调用者 / APP / Service</text>
+<text x="112" y="359.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">参数 / 长度 / 超时</text>
+<text x="112" y="393.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">明确缓冲区所有权</text>
+<rect x="565" y="280" width="440" height="175" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="587" y="325.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">module.h · 公共契约</text>
+<text x="587" y="359.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">固定宽度类型 / 配置结构</text>
+<text x="587" y="393.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">init / start / process / stop</text>
+<rect x="1120" y="280" width="390" height="175" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1142" y="323.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#7150a3">module.c · 实现</text>
+<text x="1142" y="359.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">参数与状态检查</text>
+<text x="1142" y="393.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">错误传播 / 可重入约束</text>
+<rect x="1120" y="610" width="390" height="175" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1142" y="653.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">文件私有状态</text>
+<text x="1142" y="689.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">static 状态 / 有界缓冲区</text>
+<text x="1142" y="723.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">栈预算 / 资源生命周期</text>
+<rect x="565" y="610" width="440" height="175" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="587" y="655.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">mod_status_t</text>
+<text x="587" y="689.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">OK / EINVAL / EBUSY</text>
+<text x="587" y="723.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">ETIMEOUT / EIO</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">volatile 不提供线程安全；并发访问需要明确的 IPC 或同步机制。</text>
+</svg>

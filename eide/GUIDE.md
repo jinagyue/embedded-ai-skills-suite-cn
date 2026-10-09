@@ -1,5 +1,7 @@
 # EIDE 嵌入式工程构建
 
+![EIDE · 构建后端结构](../docs/assets/skills/eide.png)
+
 本 skill 提供 EIDE (Embedded IDE) 工程的发现、构建配置枚举、增量编译、全量重建、清理和 ELF 大小分析能力，并返回可供 `jlink/openocd` 继续使用的固件产物路径。
 
 EIDE 是 VS Code 下的嵌入式开发扩展，使用 ARM CC (AC5/AC6) 或 GCC 工具链，通过 `unify_builder` 统一构建后端驱动。

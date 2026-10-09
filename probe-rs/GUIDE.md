@@ -1,5 +1,7 @@
 # probe-rs 下载与调试
 
+![probe-rs · 探针与调试结构](../docs/assets/skills/probe-rs.png)
+
 本 skill 提供 `probe-rs` CLI 的结构化包装，覆盖探针发现、目标信息、烧录、复位、内存读写、one-shot GDB 调试和 RTT 日志读取。
 
 Windows 下优先使用 `py -3` 调用脚本；若 `arm-none-eabi-gdb` 已在 `PATH` 中，`gdb` 子命令可自动发现，不强依赖 skill `config.json`。

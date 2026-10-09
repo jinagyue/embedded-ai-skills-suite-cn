@@ -1,5 +1,7 @@
 # 可靠性与低功耗
 
+![可靠性与低功耗 · 状态结构](../docs/assets/skills/10-reliability-lowpower.png)
+
 ## 失败应该成为状态
 ```text
 INIT → ONLINE → DEGRADED → OFFLINE → RECOVERING

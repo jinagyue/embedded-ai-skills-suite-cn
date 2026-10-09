@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">固件工具箱 · 输入与分析结构</title><desc id="desc">工具围绕三类证据工作：静态工程、构建产物、运行记录</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">固件工具箱 · 输入与分析结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">工具围绕三类证据工作：静态工程、构建产物、运行记录</text>
+<polyline points="300.0,340 300.0,385.0 300.0,385.0 300.0,430" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="300.0,430 306.0,417.0 294.0,417.0" fill="#718197"/>
+<polyline points="300.0,640 300.0,692.5 300.0,692.5 300.0,745" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="300.0,745 306.0,732.0 294.0,732.0" fill="#718197"/>
+<polyline points="800.0,340 800.0,385.0 800.0,385.0 800.0,430" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,430 806.0,417.0 794.0,417.0" fill="#718197"/>
+<polyline points="800.0,640 800.0,692.5 800.0,692.5 800.0,745" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,745 806.0,732.0 794.0,732.0" fill="#718197"/>
+<polyline points="1300.0,340 1300.0,385.0 1300.0,385.0 1300.0,430" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,430 1306.0,417.0 1294.0,417.0" fill="#718197"/>
+<polyline points="1300.0,640 1300.0,692.5 1300.0,692.5 1300.0,745" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1300.0,745 1306.0,732.0 1294.0,732.0" fill="#718197"/>
+<rect x="90" y="200" width="420" height="140" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="245.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">工程源码 / .ioc</text>
+<text x="112" y="279.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">目录 / include / 外设配置</text>
+<rect x="90" y="430" width="420" height="210" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="475.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">静态扫描与门禁</text>
+<text x="112" y="509.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">工程 / 架构 / HAL 泄漏</text>
+<text x="112" y="543.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Pin / DMA / IRQ / RTOS</text>
+<text x="112" y="577.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">配置与源码一致性</text>
+<rect x="90" y="745" width="420" height="130" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="790.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">工程模型 / 架构报告</text>
+<text x="112" y="824.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">资源映射 / 依赖关系</text>
+<rect x="590" y="200" width="420" height="140" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="612" y="245.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">MAP / ELF</text>
+<text x="612" y="279.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">段 / region / 符号 / 地址</text>
+<rect x="590" y="430" width="420" height="210" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="612" y="475.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">固件产物分析</text>
+<text x="612" y="509.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Keil MAP Analyzer</text>
+<text x="612" y="543.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">ELF Analyzer</text>
+<text x="612" y="577.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">addr2line Resolver</text>
+<rect x="590" y="745" width="420" height="130" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="790.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">资源与源码定位</text>
+<text x="612" y="824.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Flash / RAM / 最大符号</text>
+<rect x="1090" y="200" width="420" height="140" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1112" y="245.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">串口 / RTT / Fault 日志</text>
+<text x="1112" y="279.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">运行快照 / 寄存器 / PC</text>
+<rect x="1090" y="430" width="420" height="210" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="1112" y="475.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">运行记录分析</text>
+<text x="1112" y="509.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Serial Monitor</text>
+<text x="1112" y="543.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">FreeRTOS Runtime Analyzer</text>
+<text x="1112" y="577.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">HardFault Decoder</text>
+<rect x="1090" y="745" width="420" height="130" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="790.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">运行与异常报告</text>
+<text x="1112" y="824.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Task / 栈堆 / Fault / 源码行</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">分析结果供架构与故障判断使用；硬件结论仍需对应的运行或测量证据。</text>
+</svg>

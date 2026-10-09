@@ -1,5 +1,7 @@
 # STM32 平台与 BSP
 
+![STM32 · 配置与 BSP 结构](../docs/assets/skills/04-stm32-platform.png)
+
 ## CubeMX 原则
 - `.ioc` 是硬件配置的重要事实源，必须版本控制。
 - 时钟、PinMux、NVIC、DMA、外设初始化优先让 CubeMX 生成。

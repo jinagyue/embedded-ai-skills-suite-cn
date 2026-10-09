@@ -1,0 +1,6085 @@
+[
+  {
+    "id": "embeddedskills",
+    "title": "嵌入式技能套件 · 单入口架构",
+    "subtitle": "任务按需路由到内部 GUIDE.md，再调用对应脚本；外部只注册一个 SKILL.md",
+    "note": "实线：专业路由与状态流。虚线：工具选用。专业模块给出方法，工具后端执行命令。",
+    "height": 1360,
+    "source": "SKILL.md",
+    "nodes": {
+      "entry": {
+        "x": 440,
+        "y": 170,
+        "w": 720,
+        "h": 125,
+        "title": "embeddedskills / SKILL.md",
+        "lines": [
+          "用户任务 → 专业模块选择 → 工具后端选择"
+        ],
+        "tone": "blue"
+      },
+      "p0": {
+        "x": 95,
+        "y": 425,
+        "w": 330,
+        "h": 225,
+        "title": "设计与平台",
+        "lines": [
+          "00 总工作流",
+          "01 五层架构",
+          "02 C99 实现",
+          "03 Cortex-M"
+        ],
+        "tone": "blue"
+      },
+      "p1": {
+        "x": 455,
+        "y": 425,
+        "w": 330,
+        "h": 225,
+        "title": "外设与并发",
+        "lines": [
+          "04 STM32 / BSP",
+          "05 Device / Service",
+          "06 FreeRTOS / IPC",
+          "07 通信协议"
+        ],
+        "tone": "blue"
+      },
+      "p2": {
+        "x": 815,
+        "y": 425,
+        "w": 330,
+        "h": 225,
+        "title": "验证与演进",
+        "lines": [
+          "08 Bring-up / 调试",
+          "09 评审与测试",
+          "10 可靠性 / 低功耗",
+          "11 渐进重构"
+        ],
+        "tone": "blue"
+      },
+      "p3": {
+        "x": 1175,
+        "y": 425,
+        "w": 330,
+        "h": 225,
+        "title": "证据与闭环",
+        "lines": [
+          "12 AI 自动调试",
+          "13 固件分析工具箱"
+        ],
+        "tone": "blue"
+      },
+      "b0": {
+        "x": 95,
+        "y": 835,
+        "w": 330,
+        "h": 195,
+        "title": "构建",
+        "lines": [
+          "Keil MDK",
+          "CMake / ARM GCC",
+          "EIDE"
+        ],
+        "tone": "teal"
+      },
+      "b1": {
+        "x": 455,
+        "y": 835,
+        "w": 330,
+        "h": 195,
+        "title": "下载与调试",
+        "lines": [
+          "J-Link",
+          "OpenOCD",
+          "probe-rs"
+        ],
+        "tone": "teal"
+      },
+      "b2": {
+        "x": 815,
+        "y": 835,
+        "w": 330,
+        "h": 195,
+        "title": "通信与连接",
+        "lines": [
+          "serial / CAN / net",
+          "SSH / terminal"
+        ],
+        "tone": "teal"
+      },
+      "b3": {
+        "x": 1175,
+        "y": 835,
+        "w": 330,
+        "h": 195,
+        "title": "阶段编排",
+        "lines": [
+          "workflow",
+          "发现 → 选择 → 串联",
+          "聚合结果与状态"
+        ],
+        "tone": "teal"
+      },
+      "data": {
+        "x": 210,
+        "y": 1140,
+        "w": 1180,
+        "h": 105,
+        "title": "工程侧证据与状态",
+        "lines": [
+          ".embedded-ai/：分析报告      .embeddedskills/：配置 / 状态 / 执行日志"
+        ],
+        "tone": "gray"
+      }
+    },
+    "edges": [
+      {
+        "a": "entry",
+        "b": "p0",
+        "points": [
+          [
+            800,
+            295
+          ],
+          [
+            800,
+            410
+          ],
+          [
+            260,
+            410
+          ],
+          [
+            260,
+            425
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "entry",
+        "b": "p1",
+        "points": [
+          [
+            800,
+            295
+          ],
+          [
+            800,
+            410
+          ],
+          [
+            620,
+            410
+          ],
+          [
+            620,
+            425
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "entry",
+        "b": "p2",
+        "points": [
+          [
+            800,
+            295
+          ],
+          [
+            800,
+            410
+          ],
+          [
+            980,
+            410
+          ],
+          [
+            980,
+            425
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "entry",
+        "b": "p3",
+        "points": [
+          [
+            800,
+            295
+          ],
+          [
+            800,
+            410
+          ],
+          [
+            1340,
+            410
+          ],
+          [
+            1340,
+            425
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "entry",
+        "b": "b0",
+        "points": [
+          [
+            440,
+            232
+          ],
+          [
+            35,
+            232
+          ],
+          [
+            35,
+            720
+          ],
+          [
+            800,
+            720
+          ],
+          [
+            800,
+            815
+          ],
+          [
+            260,
+            815
+          ],
+          [
+            260,
+            835
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "entry",
+        "b": "b1",
+        "points": [
+          [
+            440,
+            232
+          ],
+          [
+            35,
+            232
+          ],
+          [
+            35,
+            720
+          ],
+          [
+            800,
+            720
+          ],
+          [
+            800,
+            815
+          ],
+          [
+            620,
+            815
+          ],
+          [
+            620,
+            835
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "entry",
+        "b": "b2",
+        "points": [
+          [
+            440,
+            232
+          ],
+          [
+            35,
+            232
+          ],
+          [
+            35,
+            720
+          ],
+          [
+            800,
+            720
+          ],
+          [
+            800,
+            815
+          ],
+          [
+            980,
+            815
+          ],
+          [
+            980,
+            835
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "entry",
+        "b": "b3",
+        "points": [
+          [
+            440,
+            232
+          ],
+          [
+            35,
+            232
+          ],
+          [
+            35,
+            720
+          ],
+          [
+            800,
+            720
+          ],
+          [
+            800,
+            815
+          ],
+          [
+            1340,
+            815
+          ],
+          [
+            1340,
+            835
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "b0",
+        "b": "data",
+        "points": [
+          [
+            260.0,
+            1030
+          ],
+          [
+            260.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1140
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "b1",
+        "b": "data",
+        "points": [
+          [
+            620.0,
+            1030
+          ],
+          [
+            620.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1140
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "b2",
+        "b": "data",
+        "points": [
+          [
+            980.0,
+            1030
+          ],
+          [
+            980.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1140
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "b3",
+        "b": "data",
+        "points": [
+          [
+            1340.0,
+            1030
+          ],
+          [
+            1340.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1085.0
+          ],
+          [
+            800.0,
+            1140
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": [
+      {
+        "x": 65,
+        "y": 350,
+        "w": 1470,
+        "h": 350,
+        "title": "专业模块层 / 14 个 GUIDE.md",
+        "tone": "blue"
+      },
+      {
+        "x": 65,
+        "y": 755,
+        "w": 1470,
+        "h": 325,
+        "title": "执行后端层 / 12 个 GUIDE.md + scripts/",
+        "tone": "teal"
+      }
+    ]
+  },
+  {
+    "id": "00-embedded-workflow",
+    "title": "嵌入式开发 · 总流程",
+    "subtitle": "从工程发现到运行证据，以可验证的纵向切片推进",
+    "note": "流程按本次任务范围裁剪；需要设备操作时执行已授权的阶段。",
+    "height": 1000,
+    "source": "00-embedded-workflow/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "01 工程发现",
+        "lines": [
+          ".ioc / MCU / SDK / RTOS",
+          "工程目录与构建系统"
+        ],
+        "tone": "blue"
+      },
+      "1": {
+        "x": 590,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "02 静态证据",
+        "lines": [
+          "工程扫描 / 资源审计",
+          "分层归类 / 依赖门禁"
+        ],
+        "tone": "blue"
+      },
+      "2": {
+        "x": 1090,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "03 设计契约",
+        "lines": [
+          "Task / IPC / 数据所有权",
+          "公共接口 / 错误码"
+        ],
+        "tone": "purple"
+      },
+      "3": {
+        "x": 1090,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "04 最小实现",
+        "lines": [
+          "先接口后实现",
+          "按纵向链路修改"
+        ],
+        "tone": "purple"
+      },
+      "4": {
+        "x": 590,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "05 构建与分析",
+        "lines": [
+          "编译 / 链接",
+          "ELF / MAP / Flash / RAM"
+        ],
+        "tone": "teal"
+      },
+      "5": {
+        "x": 90,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "06 采证与复核",
+        "lines": [
+          "串口 / RTT / GDB",
+          "比较修改前后的证据"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            510,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            590,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            1010,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1090,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            1300.0,
+            410
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            545
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            1090,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1010,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "4",
+        "b": "5",
+        "points": [
+          [
+            590,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            510,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "5",
+        "b": "0",
+        "points": [
+          [
+            90,
+            632
+          ],
+          [
+            48,
+            632
+          ],
+          [
+            48,
+            322
+          ],
+          [
+            90,
+            322
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "01-embedded-architecture",
+    "title": "嵌入式软件 · 五层架构",
+    "subtitle": "箭头表示上层对下层的依赖；职责以实现与资源所有权为依据",
+    "note": "APP 不直接调用 HAL；禁止反向 include；arch-map.json 记录人工确认的语义角色。",
+    "height": 1000,
+    "source": "01-embedded-architecture/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 190,
+        "w": 950,
+        "h": 98,
+        "title": "L5  App + RTOS 任务编排",
+        "lines": [
+          "产品流程 / 状态机 / 任务入口"
+        ],
+        "tone": "blue"
+      },
+      "1": {
+        "x": 90,
+        "y": 323,
+        "w": 950,
+        "h": 98,
+        "title": "L4  Business Service",
+        "lines": [
+          "测量 / 存储 / 通信 / 电源 / UI 能力"
+        ],
+        "tone": "teal"
+      },
+      "2": {
+        "x": 90,
+        "y": 456,
+        "w": 950,
+        "h": 98,
+        "title": "L3  Device / Protocol / BSP Service",
+        "lines": [
+          "具体器件 / 协议语义 / 稳定数据通道"
+        ],
+        "tone": "purple"
+      },
+      "3": {
+        "x": 90,
+        "y": 589,
+        "w": 950,
+        "h": 98,
+        "title": "L2  BSP Driver",
+        "lines": [
+          "GPIO / UART / SPI / I2C / ADC / TIM / DMA / CAN"
+        ],
+        "tone": "amber"
+      },
+      "4": {
+        "x": 90,
+        "y": 722,
+        "w": 950,
+        "h": 98,
+        "title": "L1  Vendor / CubeMX",
+        "lines": [
+          "CMSIS / HAL / LL / Startup / IRQ / 生成初始化"
+        ],
+        "tone": "gray"
+      },
+      "side": {
+        "x": 1120,
+        "y": 245,
+        "w": 390,
+        "h": 410,
+        "title": "横向公共资源",
+        "lines": [
+          "Middlewares/",
+          "Common/",
+          "Config/",
+          "Tests/",
+          "",
+          "复核：include / 调用",
+          "HAL 泄漏 / 构建目标"
+        ],
+        "tone": "gray"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            565.0,
+            288
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            323
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            565.0,
+            421
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            456
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            565.0,
+            554
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            589
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            565.0,
+            687
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            722
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "02-c99-embedded",
+    "title": "C99 模块 · 接口与状态结构",
+    "subtitle": "公共契约与私有实现分开；调用者通过状态码接收结果",
+    "note": "volatile 不提供线程安全；并发访问需要明确的 IPC 或同步机制。",
+    "height": 1000,
+    "source": "02-c99-embedded/GUIDE.md",
+    "nodes": {
+      "caller": {
+        "x": 90,
+        "y": 280,
+        "w": 360,
+        "h": 175,
+        "title": "调用者 / APP / Service",
+        "lines": [
+          "参数 / 长度 / 超时",
+          "明确缓冲区所有权"
+        ],
+        "tone": "blue"
+      },
+      "api": {
+        "x": 565,
+        "y": 280,
+        "w": 440,
+        "h": 175,
+        "title": "module.h · 公共契约",
+        "lines": [
+          "固定宽度类型 / 配置结构",
+          "init / start / process / stop"
+        ],
+        "tone": "teal"
+      },
+      "impl": {
+        "x": 1120,
+        "y": 280,
+        "w": 390,
+        "h": 175,
+        "title": "module.c · 实现",
+        "lines": [
+          "参数与状态检查",
+          "错误传播 / 可重入约束"
+        ],
+        "tone": "purple"
+      },
+      "state": {
+        "x": 1120,
+        "y": 610,
+        "w": 390,
+        "h": 175,
+        "title": "文件私有状态",
+        "lines": [
+          "static 状态 / 有界缓冲区",
+          "栈预算 / 资源生命周期"
+        ],
+        "tone": "gray"
+      },
+      "result": {
+        "x": 565,
+        "y": 610,
+        "w": 440,
+        "h": 175,
+        "title": "mod_status_t",
+        "lines": [
+          "OK / EINVAL / EBUSY",
+          "ETIMEOUT / EIO"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "caller",
+        "b": "api",
+        "points": [
+          [
+            450,
+            367.5
+          ],
+          [
+            507.5,
+            367.5
+          ],
+          [
+            507.5,
+            367.5
+          ],
+          [
+            565,
+            367.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "api",
+        "b": "impl",
+        "points": [
+          [
+            1005,
+            367.5
+          ],
+          [
+            1062.5,
+            367.5
+          ],
+          [
+            1062.5,
+            367.5
+          ],
+          [
+            1120,
+            367.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "impl",
+        "b": "state",
+        "points": [
+          [
+            1315.0,
+            455
+          ],
+          [
+            1315.0,
+            532.5
+          ],
+          [
+            1315.0,
+            532.5
+          ],
+          [
+            1315.0,
+            610
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "impl",
+        "b": "result",
+        "points": [
+          [
+            1315.0,
+            455
+          ],
+          [
+            1315.0,
+            532.5
+          ],
+          [
+            785.0,
+            532.5
+          ],
+          [
+            785.0,
+            610
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "result",
+        "b": "caller",
+        "points": [
+          [
+            565,
+            697
+          ],
+          [
+            490,
+            697
+          ],
+          [
+            490,
+            505
+          ],
+          [
+            270,
+            505
+          ],
+          [
+            270,
+            455
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "03-arm-cortexm",
+    "title": "Cortex-M · 启动与异常结构",
+    "subtitle": "启动链路、异常证据与 DMA / Cache 一致性三个关注面",
+    "note": "RTOS ISR API 受中断优先级约束；有 Cache 的平台需处理 DMA 缓冲区一致性。",
+    "height": 1000,
+    "source": "03-arm-cortexm/GUIDE.md",
+    "nodes": {
+      "s0": {
+        "x": 90,
+        "y": 205,
+        "w": 420,
+        "h": 135,
+        "title": "Reset / 向量表",
+        "lines": [
+          "Reset_Handler 入口"
+        ],
+        "tone": "blue"
+      },
+      "s1": {
+        "x": 590,
+        "y": 205,
+        "w": 420,
+        "h": 135,
+        "title": "运行环境初始化",
+        "lines": [
+          ".data / .bss / SystemInit"
+        ],
+        "tone": "blue"
+      },
+      "s2": {
+        "x": 1090,
+        "y": 205,
+        "w": 420,
+        "h": 135,
+        "title": "main / Task / ISR",
+        "lines": [
+          "NVIC 优先级 / 延后处理"
+        ],
+        "tone": "blue"
+      },
+      "fault": {
+        "x": 1090,
+        "y": 510,
+        "w": 420,
+        "h": 180,
+        "title": "Fault 现场",
+        "lines": [
+          "PC / LR / xPSR / MSP / PSP",
+          "CFSR / HFSR / BFAR / MMFAR"
+        ],
+        "tone": "amber"
+      },
+      "decode": {
+        "x": 590,
+        "y": 510,
+        "w": 420,
+        "h": 180,
+        "title": "解码与符号定位",
+        "lines": [
+          "HardFault Decoder",
+          "addr2line + ELF → 源码行"
+        ],
+        "tone": "teal"
+      },
+      "memory": {
+        "x": 90,
+        "y": 510,
+        "w": 420,
+        "h": 180,
+        "title": "内存与外设一致性",
+        "lines": [
+          "栈边界 / MPU / Cache",
+          "DMA：对齐 / clean / invalidate"
+        ],
+        "tone": "purple"
+      }
+    },
+    "edges": [
+      {
+        "a": "s0",
+        "b": "s1",
+        "points": [
+          [
+            510,
+            272.5
+          ],
+          [
+            550.0,
+            272.5
+          ],
+          [
+            550.0,
+            272.5
+          ],
+          [
+            590,
+            272.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "s1",
+        "b": "s2",
+        "points": [
+          [
+            1010,
+            272.5
+          ],
+          [
+            1050.0,
+            272.5
+          ],
+          [
+            1050.0,
+            272.5
+          ],
+          [
+            1090,
+            272.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "s2",
+        "b": "fault",
+        "points": [
+          [
+            1300.0,
+            340
+          ],
+          [
+            1300.0,
+            425.0
+          ],
+          [
+            1300.0,
+            425.0
+          ],
+          [
+            1300.0,
+            510
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "fault",
+        "b": "decode",
+        "points": [
+          [
+            1090,
+            600.0
+          ],
+          [
+            1050.0,
+            600.0
+          ],
+          [
+            1050.0,
+            600.0
+          ],
+          [
+            1010,
+            600.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "04-stm32-platform",
+    "title": "STM32 · 配置与 BSP 结构",
+    "subtitle": "CubeMX 管理硬件配置；BSP 对上提供稳定板级 API",
+    "note": ".ioc 与源码双向复核 GPIO / NVIC / DMA / RTOS，检查配置漂移。",
+    "height": 1000,
+    "source": "04-stm32-platform/GUIDE.md",
+    "nodes": {
+      "ioc": {
+        "x": 90,
+        "y": 200,
+        "w": 420,
+        "h": 155,
+        "title": ".ioc / CubeMX",
+        "lines": [
+          "时钟 / PinMux / NVIC",
+          "DMA / 外设 / RTOS 配置"
+        ],
+        "tone": "blue"
+      },
+      "vendor": {
+        "x": 590,
+        "y": 200,
+        "w": 420,
+        "h": 155,
+        "title": "生成初始化 / HAL / LL",
+        "lines": [
+          "USER CODE 扩展点",
+          "MCU 句柄与厂商接口"
+        ],
+        "tone": "gray"
+      },
+      "bsp": {
+        "x": 1090,
+        "y": 200,
+        "w": 420,
+        "h": 155,
+        "title": "BSP Driver",
+        "lines": [
+          "GPIO / UART / SPI / I2C",
+          "ADC / TIM / DMA / CAN"
+        ],
+        "tone": "teal"
+      },
+      "service": {
+        "x": 1090,
+        "y": 555,
+        "w": 420,
+        "h": 155,
+        "title": "Device / Service / APP",
+        "lines": [
+          "使用稳定 BSP API",
+          "隐藏 HAL_* 与 MCU 句柄"
+        ],
+        "tone": "purple"
+      },
+      "audit": {
+        "x": 90,
+        "y": 555,
+        "w": 920,
+        "h": 155,
+        "title": "配置与源码一致性检查",
+        "lines": [
+          "parse_ioc / stm32_resource_audit",
+          "ioc_source_consistency：资源与配置漂移"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "ioc",
+        "b": "vendor",
+        "points": [
+          [
+            510,
+            277.5
+          ],
+          [
+            550.0,
+            277.5
+          ],
+          [
+            550.0,
+            277.5
+          ],
+          [
+            590,
+            277.5
+          ]
+        ],
+        "label": "生成",
+        "dashed": false
+      },
+      {
+        "a": "bsp",
+        "b": "vendor",
+        "points": [
+          [
+            1090,
+            277.5
+          ],
+          [
+            1050.0,
+            277.5
+          ],
+          [
+            1050.0,
+            277.5
+          ],
+          [
+            1010,
+            277.5
+          ]
+        ],
+        "label": "封装",
+        "dashed": false
+      },
+      {
+        "a": "service",
+        "b": "bsp",
+        "points": [
+          [
+            1300.0,
+            555
+          ],
+          [
+            1300.0,
+            455.0
+          ],
+          [
+            1300.0,
+            455.0
+          ],
+          [
+            1300.0,
+            355
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "ioc",
+        "b": "audit",
+        "points": [
+          [
+            300.0,
+            355
+          ],
+          [
+            300.0,
+            455.0
+          ],
+          [
+            550.0,
+            455.0
+          ],
+          [
+            550.0,
+            555
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "vendor",
+        "b": "audit",
+        "points": [
+          [
+            800.0,
+            355
+          ],
+          [
+            800.0,
+            455.0
+          ],
+          [
+            550.0,
+            455.0
+          ],
+          [
+            550.0,
+            555
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "05-device-service",
+    "title": "Device / Protocol / Service · 职责结构",
+    "subtitle": "业务能力、器件控制、字节语义与数据通道分开",
+    "note": "Protocol 负责字节与语义转换；APP 使用业务能力接口，不感知具体 HAL 句柄。",
+    "height": 1000,
+    "source": "05-device-service/GUIDE.md",
+    "nodes": {
+      "app": {
+        "x": 520,
+        "y": 175,
+        "w": 560,
+        "h": 95,
+        "title": "APP / 产品流程",
+        "lines": [],
+        "tone": "blue"
+      },
+      "business": {
+        "x": 520,
+        "y": 340,
+        "w": 560,
+        "h": 110,
+        "title": "Business Service",
+        "lines": [
+          "measurement_start / get_result"
+        ],
+        "tone": "teal"
+      },
+      "device": {
+        "x": 90,
+        "y": 525,
+        "w": 420,
+        "h": 165,
+        "title": "Device · 具体器件",
+        "lines": [
+          "传感器 / Flash / 显示屏",
+          "寄存器与器件行为"
+        ],
+        "tone": "purple"
+      },
+      "protocol": {
+        "x": 590,
+        "y": 525,
+        "w": 420,
+        "h": 165,
+        "title": "Protocol · 语义转换",
+        "lines": [
+          "帧格式 / CRC / 命令码",
+          "编码 / 解码 / 边界检查"
+        ],
+        "tone": "purple"
+      },
+      "stream": {
+        "x": 1090,
+        "y": 525,
+        "w": 420,
+        "h": 165,
+        "title": "BSP Service · 数据通道",
+        "lines": [
+          "UART + DMA + IDLE",
+          "ringbuffer + notification"
+        ],
+        "tone": "purple"
+      },
+      "bsp": {
+        "x": 340,
+        "y": 780,
+        "w": 920,
+        "h": 100,
+        "title": "BSP Driver",
+        "lines": [
+          "稳定板级 API → HAL / LL → MCU 外设"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "app",
+        "b": "business",
+        "points": [
+          [
+            800.0,
+            270
+          ],
+          [
+            800.0,
+            305.0
+          ],
+          [
+            800.0,
+            305.0
+          ],
+          [
+            800.0,
+            340
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "business",
+        "b": "device",
+        "points": [
+          [
+            800.0,
+            450
+          ],
+          [
+            800.0,
+            487.5
+          ],
+          [
+            300.0,
+            487.5
+          ],
+          [
+            300.0,
+            525
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "business",
+        "b": "protocol",
+        "points": [
+          [
+            800.0,
+            450
+          ],
+          [
+            800.0,
+            487.5
+          ],
+          [
+            800.0,
+            487.5
+          ],
+          [
+            800.0,
+            525
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "business",
+        "b": "stream",
+        "points": [
+          [
+            800.0,
+            450
+          ],
+          [
+            800.0,
+            487.5
+          ],
+          [
+            1300.0,
+            487.5
+          ],
+          [
+            1300.0,
+            525
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "device",
+        "b": "bsp",
+        "points": [
+          [
+            300.0,
+            690
+          ],
+          [
+            300.0,
+            735.0
+          ],
+          [
+            800.0,
+            735.0
+          ],
+          [
+            800.0,
+            780
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "stream",
+        "b": "bsp",
+        "points": [
+          [
+            1300.0,
+            690
+          ],
+          [
+            1300.0,
+            735.0
+          ],
+          [
+            800.0,
+            735.0
+          ],
+          [
+            800.0,
+            780
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "06-freertos-design",
+    "title": "FreeRTOS · Task 与 IPC 结构",
+    "subtitle": "按独立并发活动划分 Task；每条连线标明交互机制",
+    "note": "示例关系用于任务设计；具体 Task 数量、优先级与栈预算由目标工程确定。",
+    "height": 1000,
+    "source": "06-freertos-design/GUIDE.md",
+    "nodes": {
+      "isr": {
+        "x": 90,
+        "y": 195,
+        "w": 420,
+        "h": 140,
+        "title": "ISR / 外设事件",
+        "lines": [
+          "采样 / 清标志 / 时间戳",
+          "非阻塞投递事件"
+        ],
+        "tone": "amber"
+      },
+      "comm": {
+        "x": 90,
+        "y": 475,
+        "w": 420,
+        "h": 155,
+        "title": "CommTask",
+        "lines": [
+          "接收 / 协议解析",
+          "命令分发"
+        ],
+        "tone": "blue"
+      },
+      "measure": {
+        "x": 590,
+        "y": 475,
+        "w": 420,
+        "h": 155,
+        "title": "MeasureTask",
+        "lines": [
+          "采集与计算",
+          "测量结果"
+        ],
+        "tone": "teal"
+      },
+      "storage": {
+        "x": 1090,
+        "y": 475,
+        "w": 420,
+        "h": 155,
+        "title": "StorageTask / UITask",
+        "lines": [
+          "存储 / 显示",
+          "结果消费"
+        ],
+        "tone": "purple"
+      },
+      "timer": {
+        "x": 590,
+        "y": 195,
+        "w": 420,
+        "h": 140,
+        "title": "Software Timer",
+        "lines": [
+          "周期事件",
+          "通知 Task"
+        ],
+        "tone": "amber"
+      },
+      "shared": {
+        "x": 590,
+        "y": 755,
+        "w": 420,
+        "h": 130,
+        "title": "共享 SPI / UART 资源",
+        "lines": [
+          "以 Mutex 串行化访问"
+        ],
+        "tone": "gray"
+      },
+      "health": {
+        "x": 1090,
+        "y": 195,
+        "w": 420,
+        "h": 140,
+        "title": "HealthTask / 运行探针",
+        "lines": [
+          "活性 / Stack HWM / Heap",
+          "运行时记录 → 分析报告"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "isr",
+        "b": "comm",
+        "points": [
+          [
+            300.0,
+            335
+          ],
+          [
+            300.0,
+            405.0
+          ],
+          [
+            300.0,
+            405.0
+          ],
+          [
+            300.0,
+            475
+          ]
+        ],
+        "label": "Notification",
+        "dashed": false
+      },
+      {
+        "a": "comm",
+        "b": "measure",
+        "points": [
+          [
+            510,
+            552.5
+          ],
+          [
+            550.0,
+            552.5
+          ],
+          [
+            550.0,
+            552.5
+          ],
+          [
+            590,
+            552.5
+          ]
+        ],
+        "label": "Queue",
+        "dashed": false
+      },
+      {
+        "a": "measure",
+        "b": "storage",
+        "points": [
+          [
+            1010,
+            552.5
+          ],
+          [
+            1050.0,
+            552.5
+          ],
+          [
+            1050.0,
+            552.5
+          ],
+          [
+            1090,
+            552.5
+          ]
+        ],
+        "label": "Queue",
+        "dashed": false
+      },
+      {
+        "a": "timer",
+        "b": "measure",
+        "points": [
+          [
+            800.0,
+            335
+          ],
+          [
+            800.0,
+            405.0
+          ],
+          [
+            800.0,
+            405.0
+          ],
+          [
+            800.0,
+            475
+          ]
+        ],
+        "label": "Notification",
+        "dashed": false
+      },
+      {
+        "a": "measure",
+        "b": "shared",
+        "points": [
+          [
+            800.0,
+            630
+          ],
+          [
+            800.0,
+            692.5
+          ],
+          [
+            800.0,
+            692.5
+          ],
+          [
+            800.0,
+            755
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "storage",
+        "b": "shared",
+        "points": [
+          [
+            1300.0,
+            630
+          ],
+          [
+            1300.0,
+            692.5
+          ],
+          [
+            800.0,
+            692.5
+          ],
+          [
+            800.0,
+            755
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "comm",
+        "b": "health",
+        "points": [
+          [
+            300,
+            475
+          ],
+          [
+            300,
+            410
+          ],
+          [
+            1300,
+            410
+          ],
+          [
+            1300,
+            335
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "measure",
+        "b": "health",
+        "points": [
+          [
+            800,
+            475
+          ],
+          [
+            800,
+            410
+          ],
+          [
+            1300,
+            410
+          ],
+          [
+            1300,
+            335
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "storage",
+        "b": "health",
+        "points": [
+          [
+            1300,
+            475
+          ],
+          [
+            1300,
+            410
+          ],
+          [
+            1300,
+            410
+          ],
+          [
+            1300,
+            335
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "07-embedded-protocols",
+    "title": "嵌入式通信 · 分层链路",
+    "subtitle": "发送方向自上而下；接收方向自下而上，Protocol 完成字节与语义转换",
+    "note": "接收回调仅记录数据段并通知 Task；协议必须处理超时、缓存上限和异常输入。",
+    "height": 1000,
+    "source": "07-embedded-protocols/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 190,
+        "w": 950,
+        "h": 98,
+        "title": "APP / Service",
+        "lines": [
+          "语义命令 / 业务结果"
+        ],
+        "tone": "blue"
+      },
+      "1": {
+        "x": 90,
+        "y": 323,
+        "w": 950,
+        "h": 98,
+        "title": "Protocol",
+        "lines": [
+          "帧界定 / 长度 / CRC / 字节序 / 重同步"
+        ],
+        "tone": "purple"
+      },
+      "2": {
+        "x": 90,
+        "y": 456,
+        "w": 950,
+        "h": 98,
+        "title": "BSP Service / Link",
+        "lines": [
+          "字节流 / 消息 / 环形缓冲区"
+        ],
+        "tone": "teal"
+      },
+      "3": {
+        "x": 90,
+        "y": 589,
+        "w": 950,
+        "h": 98,
+        "title": "BSP Driver",
+        "lines": [
+          "驱动 API / HAL 封装"
+        ],
+        "tone": "amber"
+      },
+      "4": {
+        "x": 90,
+        "y": 722,
+        "w": 950,
+        "h": 98,
+        "title": "UART / CAN / SPI / I2C / USB",
+        "lines": [
+          "MCU 通信外设"
+        ],
+        "tone": "gray"
+      },
+      "side": {
+        "x": 1120,
+        "y": 245,
+        "w": 390,
+        "h": 410,
+        "title": "UART 接收示例",
+        "lines": [
+          "DMA + IDLE",
+          "↓",
+          "环形 / 双缓冲",
+          "↓",
+          "Task 通知",
+          "↓",
+          "Protocol parser"
+        ],
+        "tone": "gray"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            565.0,
+            288
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            323
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            565.0,
+            421
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            456
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            565.0,
+            554
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            589
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            565.0,
+            687
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            722
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "08-debugging-bringup",
+    "title": "Bring-up · 逐层验证结构",
+    "subtitle": "一次增加一个复杂因素，以基础硬件为起点",
+    "note": "异常定位后保全证据，再做最小修复与重现验证。",
+    "height": 1000,
+    "source": "08-debugging-bringup/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "01 基础硬件",
+        "lines": [
+          "电源 / 复位 / SWD",
+          "连接与复位原因"
+        ],
+        "tone": "gray"
+      },
+      "1": {
+        "x": 590,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "02 最小运行",
+        "lines": [
+          "时钟 / GPIO 心跳",
+          "调试串口 / Tick"
+        ],
+        "tone": "blue"
+      },
+      "2": {
+        "x": 1090,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "03 外设与中断",
+        "lines": [
+          "单个外设",
+          "DMA / IRQ"
+        ],
+        "tone": "blue"
+      },
+      "3": {
+        "x": 1090,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "04 并发与中间件",
+        "lines": [
+          "RTOS / Middleware",
+          "完整业务"
+        ],
+        "tone": "purple"
+      },
+      "4": {
+        "x": 590,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "05 运行证据",
+        "lines": [
+          "日志 / 栈水位 / Queue",
+          "IRQ / DMA / 波形"
+        ],
+        "tone": "teal"
+      },
+      "5": {
+        "x": 90,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "06 Fault 定位",
+        "lines": [
+          "寄存器 → PC / LR",
+          "ELF + addr2line → 源码"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            510,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            590,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            1010,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1090,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            1300.0,
+            410
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            545
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            1090,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1010,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "4",
+        "b": "5",
+        "points": [
+          [
+            590,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            510,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "5",
+        "b": "0",
+        "points": [
+          [
+            90,
+            632
+          ],
+          [
+            48,
+            632
+          ],
+          [
+            48,
+            322
+          ],
+          [
+            90,
+            322
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "09-quality-review-testing",
+    "title": "质量验证 · 测试层级结构",
+    "subtitle": "测试范围从纯逻辑扩展到真实外设与系统环境",
+    "note": "层级之间表示验证范围扩展；图中并不声明已完成目标工程的各级测试。",
+    "height": 1000,
+    "source": "09-quality-review-testing/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 190,
+        "w": 950,
+        "h": 98,
+        "title": "Host Unit Test",
+        "lines": [
+          "Protocol / 算法 / 状态机 / Common"
+        ],
+        "tone": "blue"
+      },
+      "1": {
+        "x": 90,
+        "y": 323,
+        "w": 950,
+        "h": 98,
+        "title": "Integration",
+        "lines": [
+          "Service + Fake Device / BSP"
+        ],
+        "tone": "blue"
+      },
+      "2": {
+        "x": 90,
+        "y": 456,
+        "w": 950,
+        "h": 98,
+        "title": "Target Test",
+        "lines": [
+          "真实 MCU 外设"
+        ],
+        "tone": "teal"
+      },
+      "3": {
+        "x": 90,
+        "y": 589,
+        "w": 950,
+        "h": 98,
+        "title": "HIL",
+        "lines": [
+          "实际板卡与仪器"
+        ],
+        "tone": "teal"
+      },
+      "4": {
+        "x": 90,
+        "y": 722,
+        "w": 950,
+        "h": 98,
+        "title": "Regression",
+        "lines": [
+          "保存复现用例，持续比较修复前后行为"
+        ],
+        "tone": "purple"
+      },
+      "side": {
+        "x": 1120,
+        "y": 245,
+        "w": 390,
+        "h": 410,
+        "title": "跨阶段评审与门禁",
+        "lines": [
+          "功能与边界 / 并发",
+          "内存 / 栈 / 硬件资源",
+          "错误处理 / 架构依赖",
+          "",
+          "构建后：ELF / MAP",
+          "Flash / RAM / 段增长",
+          "最大函数 / 最大对象"
+        ],
+        "tone": "gray"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            565.0,
+            288
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            305.5
+          ],
+          [
+            565.0,
+            323
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            565.0,
+            421
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            438.5
+          ],
+          [
+            565.0,
+            456
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            565.0,
+            554
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            571.5
+          ],
+          [
+            565.0,
+            589
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            565.0,
+            687
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            704.5
+          ],
+          [
+            565.0,
+            722
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "10-reliability-lowpower",
+    "title": "可靠性与低功耗 · 状态结构",
+    "subtitle": "将失败显式建模；由健康任务统一管理看门狗",
+    "note": "唤醒后恢复时钟并复核外设；超时、降级与恢复条件由目标系统明确规定。",
+    "height": 1000,
+    "source": "10-reliability-lowpower/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 205,
+        "w": 220,
+        "h": 100,
+        "title": "INIT",
+        "lines": [],
+        "tone": "gray"
+      },
+      "1": {
+        "x": 390,
+        "y": 205,
+        "w": 220,
+        "h": 100,
+        "title": "ONLINE",
+        "lines": [],
+        "tone": "teal"
+      },
+      "2": {
+        "x": 690,
+        "y": 205,
+        "w": 220,
+        "h": 100,
+        "title": "DEGRADED",
+        "lines": [],
+        "tone": "amber"
+      },
+      "3": {
+        "x": 990,
+        "y": 205,
+        "w": 220,
+        "h": 100,
+        "title": "OFFLINE",
+        "lines": [],
+        "tone": "gray"
+      },
+      "4": {
+        "x": 1290,
+        "y": 205,
+        "w": 220,
+        "h": 100,
+        "title": "RECOVERING",
+        "lines": [],
+        "tone": "purple"
+      },
+      "tasks": {
+        "x": 90,
+        "y": 460,
+        "w": 420,
+        "h": 155,
+        "title": "关键 Task 活性证明",
+        "lines": [
+          "计数 / 时间戳 / 完成信号"
+        ],
+        "tone": "blue"
+      },
+      "health": {
+        "x": 590,
+        "y": 460,
+        "w": 420,
+        "h": 155,
+        "title": "HealthTask",
+        "lines": [
+          "汇总关键任务状态",
+          "符合健康条件才喂狗"
+        ],
+        "tone": "teal"
+      },
+      "watch": {
+        "x": 1090,
+        "y": 460,
+        "w": 420,
+        "h": 155,
+        "title": "Watchdog",
+        "lines": [
+          "系统停滞 → 复位",
+          "记录复位原因"
+        ],
+        "tone": "amber"
+      },
+      "power": {
+        "x": 220,
+        "y": 735,
+        "w": 1160,
+        "h": 135,
+        "title": "电源状态与恢复路径",
+        "lines": [
+          "RUN / SLEEP / STOP / OFF",
+          "资源状态 + 唤醒源 → 时钟恢复 → 外设重新校验"
+        ],
+        "tone": "purple"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            310,
+            255.0
+          ],
+          [
+            350.0,
+            255.0
+          ],
+          [
+            350.0,
+            255.0
+          ],
+          [
+            390,
+            255.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            610,
+            255.0
+          ],
+          [
+            650.0,
+            255.0
+          ],
+          [
+            650.0,
+            255.0
+          ],
+          [
+            690,
+            255.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            910,
+            255.0
+          ],
+          [
+            950.0,
+            255.0
+          ],
+          [
+            950.0,
+            255.0
+          ],
+          [
+            990,
+            255.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            1210,
+            255.0
+          ],
+          [
+            1250.0,
+            255.0
+          ],
+          [
+            1250.0,
+            255.0
+          ],
+          [
+            1290,
+            255.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "4",
+        "b": "1",
+        "points": [
+          [
+            1400,
+            305
+          ],
+          [
+            1400,
+            370
+          ],
+          [
+            500,
+            370
+          ],
+          [
+            500,
+            305
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      },
+      {
+        "a": "tasks",
+        "b": "health",
+        "points": [
+          [
+            510,
+            537.5
+          ],
+          [
+            550.0,
+            537.5
+          ],
+          [
+            550.0,
+            537.5
+          ],
+          [
+            590,
+            537.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "health",
+        "b": "watch",
+        "points": [
+          [
+            1010,
+            537.5
+          ],
+          [
+            1050.0,
+            537.5
+          ],
+          [
+            1050.0,
+            537.5
+          ],
+          [
+            1090,
+            537.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "11-refactor-existing",
+    "title": "存量工程 · 渐进重构路径",
+    "subtitle": "每次迁移一条可验证纵向链路，保留旧路径与回退点",
+    "note": "循环箭头：每个迁移步骤都复核行为与依赖，再进入下一条链路。",
+    "height": 1000,
+    "source": "11-refactor-existing/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "01 现状盘点",
+        "lines": [
+          "职责 / 调用 / HAL / RTOS",
+          "共享状态与目标层"
+        ],
+        "tone": "gray"
+      },
+      "1": {
+        "x": 590,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "02 抽出 Protocol",
+        "lines": [
+          "纯 parser / 帧与语义",
+          "保留协议复现用例"
+        ],
+        "tone": "purple"
+      },
+      "2": {
+        "x": 1090,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "03 抽出 Service",
+        "lines": [
+          "业务能力与错误路径",
+          "Task 调用能力接口"
+        ],
+        "tone": "teal"
+      },
+      "3": {
+        "x": 1090,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "04 封装 BSP / Device",
+        "lines": [
+          "板级资源 / 具体器件",
+          "稳定 API 隔离句柄"
+        ],
+        "tone": "amber"
+      },
+      "4": {
+        "x": 590,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "05 整理 Task 与状态",
+        "lines": [
+          "等待事件 / 调用 APP",
+          "消除可写 extern"
+        ],
+        "tone": "blue"
+      },
+      "5": {
+        "x": 90,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "06 门禁与回归",
+        "lines": [
+          "扫描 / 构建 / 测试",
+          "验证后调整目录"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            510,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            590,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            1010,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1090,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            1300.0,
+            410
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            545
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            1090,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1010,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "4",
+        "b": "5",
+        "points": [
+          [
+            590,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            510,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "5",
+        "b": "0",
+        "points": [
+          [
+            90,
+            632
+          ],
+          [
+            48,
+            632
+          ],
+          [
+            48,
+            322
+          ],
+          [
+            90,
+            322
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "12-auto-debug",
+    "title": "AI 自动调试 · 证据闭环",
+    "subtitle": "先建立证据，再定位与最小修改；每次修复返回构建与采证",
+    "note": "默认不自动烧录；循环中的设备阶段仅按任务授权与可用证据执行。",
+    "height": 1000,
+    "source": "12-auto-debug/GUIDE.md",
+    "nodes": {
+      "0": {
+        "x": 90,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "01 静态工程模型",
+        "lines": [
+          "源码 / .ioc / 分层 / RTOS",
+          "GPIO / IRQ / DMA 一致性"
+        ],
+        "tone": "blue"
+      },
+      "1": {
+        "x": 590,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "02 构建与固件分析",
+        "lines": [
+          "Build → MAP / ELF",
+          "Flash / RAM / 符号"
+        ],
+        "tone": "teal"
+      },
+      "2": {
+        "x": 1090,
+        "y": 235,
+        "w": 420,
+        "h": 175,
+        "title": "03 可选设备阶段",
+        "lines": [
+          "按任务选择 Flash / Debug",
+          "串口 / RTT / GDB 采证"
+        ],
+        "tone": "amber"
+      },
+      "3": {
+        "x": 1090,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "04 运行时分析",
+        "lines": [
+          "Task / Stack HWM / Heap",
+          "日志与异常记录"
+        ],
+        "tone": "purple"
+      },
+      "4": {
+        "x": 590,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "05 故障定位",
+        "lines": [
+          "Fault 寄存器 / PC / LR",
+          "addr2line + ELF → 源码"
+        ],
+        "tone": "purple"
+      },
+      "5": {
+        "x": 90,
+        "y": 545,
+        "w": 420,
+        "h": 175,
+        "title": "06 最小修改与复核",
+        "lines": [
+          "AI 修改 → 重新构建",
+          "重新采证 / 比较差异"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "0",
+        "b": "1",
+        "points": [
+          [
+            510,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            550.0,
+            322.5
+          ],
+          [
+            590,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "1",
+        "b": "2",
+        "points": [
+          [
+            1010,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1050.0,
+            322.5
+          ],
+          [
+            1090,
+            322.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "points": [
+          [
+            1300.0,
+            410
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            545
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "3",
+        "b": "4",
+        "points": [
+          [
+            1090,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1050.0,
+            632.5
+          ],
+          [
+            1010,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "4",
+        "b": "5",
+        "points": [
+          [
+            590,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            550.0,
+            632.5
+          ],
+          [
+            510,
+            632.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "5",
+        "b": "0",
+        "points": [
+          [
+            90,
+            632
+          ],
+          [
+            48,
+            632
+          ],
+          [
+            48,
+            322
+          ],
+          [
+            90,
+            322
+          ]
+        ],
+        "label": "",
+        "dashed": true
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "13-firmware-tools",
+    "title": "固件工具箱 · 输入与分析结构",
+    "subtitle": "工具围绕三类证据工作：静态工程、构建产物、运行记录",
+    "note": "分析结果供架构与故障判断使用；硬件结论仍需对应的运行或测量证据。",
+    "height": 1000,
+    "source": "13-firmware-tools/GUIDE.md",
+    "nodes": {
+      "in0": {
+        "x": 90,
+        "y": 200,
+        "w": 420,
+        "h": 140,
+        "title": "工程源码 / .ioc",
+        "lines": [
+          "目录 / include / 外设配置"
+        ],
+        "tone": "gray"
+      },
+      "tool0": {
+        "x": 90,
+        "y": 430,
+        "w": 420,
+        "h": 210,
+        "title": "静态扫描与门禁",
+        "lines": [
+          "工程 / 架构 / HAL 泄漏",
+          "Pin / DMA / IRQ / RTOS",
+          "配置与源码一致性"
+        ],
+        "tone": "blue"
+      },
+      "out0": {
+        "x": 90,
+        "y": 745,
+        "w": 420,
+        "h": 130,
+        "title": "工程模型 / 架构报告",
+        "lines": [
+          "资源映射 / 依赖关系"
+        ],
+        "tone": "teal"
+      },
+      "in1": {
+        "x": 590,
+        "y": 200,
+        "w": 420,
+        "h": 140,
+        "title": "MAP / ELF",
+        "lines": [
+          "段 / region / 符号 / 地址"
+        ],
+        "tone": "gray"
+      },
+      "tool1": {
+        "x": 590,
+        "y": 430,
+        "w": 420,
+        "h": 210,
+        "title": "固件产物分析",
+        "lines": [
+          "Keil MAP Analyzer",
+          "ELF Analyzer",
+          "addr2line Resolver"
+        ],
+        "tone": "blue"
+      },
+      "out1": {
+        "x": 590,
+        "y": 745,
+        "w": 420,
+        "h": 130,
+        "title": "资源与源码定位",
+        "lines": [
+          "Flash / RAM / 最大符号"
+        ],
+        "tone": "teal"
+      },
+      "in2": {
+        "x": 1090,
+        "y": 200,
+        "w": 420,
+        "h": 140,
+        "title": "串口 / RTT / Fault 日志",
+        "lines": [
+          "运行快照 / 寄存器 / PC"
+        ],
+        "tone": "gray"
+      },
+      "tool2": {
+        "x": 1090,
+        "y": 430,
+        "w": 420,
+        "h": 210,
+        "title": "运行记录分析",
+        "lines": [
+          "Serial Monitor",
+          "FreeRTOS Runtime Analyzer",
+          "HardFault Decoder"
+        ],
+        "tone": "blue"
+      },
+      "out2": {
+        "x": 1090,
+        "y": 745,
+        "w": 420,
+        "h": 130,
+        "title": "运行与异常报告",
+        "lines": [
+          "Task / 栈堆 / Fault / 源码行"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "in0",
+        "b": "tool0",
+        "points": [
+          [
+            300.0,
+            340
+          ],
+          [
+            300.0,
+            385.0
+          ],
+          [
+            300.0,
+            385.0
+          ],
+          [
+            300.0,
+            430
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "tool0",
+        "b": "out0",
+        "points": [
+          [
+            300.0,
+            640
+          ],
+          [
+            300.0,
+            692.5
+          ],
+          [
+            300.0,
+            692.5
+          ],
+          [
+            300.0,
+            745
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "in1",
+        "b": "tool1",
+        "points": [
+          [
+            800.0,
+            340
+          ],
+          [
+            800.0,
+            385.0
+          ],
+          [
+            800.0,
+            385.0
+          ],
+          [
+            800.0,
+            430
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "tool1",
+        "b": "out1",
+        "points": [
+          [
+            800.0,
+            640
+          ],
+          [
+            800.0,
+            692.5
+          ],
+          [
+            800.0,
+            692.5
+          ],
+          [
+            800.0,
+            745
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "in2",
+        "b": "tool2",
+        "points": [
+          [
+            1300.0,
+            340
+          ],
+          [
+            1300.0,
+            385.0
+          ],
+          [
+            1300.0,
+            385.0
+          ],
+          [
+            1300.0,
+            430
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "tool2",
+        "b": "out2",
+        "points": [
+          [
+            1300.0,
+            640
+          ],
+          [
+            1300.0,
+            692.5
+          ],
+          [
+            1300.0,
+            692.5
+          ],
+          [
+            1300.0,
+            745
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "keil",
+    "title": "Keil MDK · 构建后端结构",
+    "subtitle": "工程发现、配置选择、构建执行与产物记录的调用结构",
+    "note": "图示为后端能力结构；图中工具路径与构建产物由本机环境和目标工程确定。",
+    "height": 1000,
+    "source": "keil/GUIDE.md",
+    "nodes": {
+      "source": {
+        "x": 90,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": ".uvprojx / .uvproj / .uvmpw",
+        "lines": [
+          "工程文件 / Target"
+        ],
+        "tone": "gray"
+      },
+      "select": {
+        "x": 590,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "工程与目标选择",
+        "lines": [
+          "CLI / config / state",
+          "scan + 目标枚举"
+        ],
+        "tone": "blue"
+      },
+      "exec": {
+        "x": 1090,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "UV4.exe / Keil 工具链",
+        "lines": [
+          "build / rebuild / clean"
+        ],
+        "tone": "purple"
+      },
+      "result": {
+        "x": 1090,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "构建结果与日志",
+        "lines": [
+          "错误 / 警告 / 日志",
+          "AXF / HEX / BIN 等产物路径"
+        ],
+        "tone": "teal"
+      },
+      "state": {
+        "x": 590,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": ".embeddedskills/",
+        "lines": [
+          "config.json：已选参数",
+          "state.json：产物与执行状态"
+        ],
+        "tone": "gray"
+      },
+      "next": {
+        "x": 90,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "后续分析 / 工具调用",
+        "lines": [
+          "ELF / MAP / size",
+          "由 workflow 选择后续阶段"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "source",
+        "b": "select",
+        "points": [
+          [
+            510,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            590,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "select",
+        "b": "exec",
+        "points": [
+          [
+            1010,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1090,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "exec",
+        "b": "result",
+        "points": [
+          [
+            1300.0,
+            380
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            605
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "result",
+        "b": "state",
+        "points": [
+          [
+            1090,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1010,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "state",
+        "b": "next",
+        "points": [
+          [
+            590,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            510,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "gcc",
+    "title": "CMake / ARM GCC · 构建结构",
+    "subtitle": "工程发现、配置选择、构建执行与产物记录的调用结构",
+    "note": "图示为后端能力结构；图中工具路径与构建产物由本机环境和目标工程确定。",
+    "height": 1000,
+    "source": "gcc/GUIDE.md",
+    "nodes": {
+      "source": {
+        "x": 90,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "CMake 工程",
+        "lines": [
+          "CMakeLists / Presets",
+          "当前支持 CMake 型工程"
+        ],
+        "tone": "gray"
+      },
+      "select": {
+        "x": 590,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "工程与目标选择",
+        "lines": [
+          "CLI / config / state",
+          "scan + 目标枚举"
+        ],
+        "tone": "blue"
+      },
+      "exec": {
+        "x": 1090,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "CMake + arm-none-eabi-gcc",
+        "lines": [
+          "configure → build",
+          "rebuild / clean / size"
+        ],
+        "tone": "purple"
+      },
+      "result": {
+        "x": 1090,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "构建结果与日志",
+        "lines": [
+          "ELF / 构建日志",
+          "text / data / bss"
+        ],
+        "tone": "teal"
+      },
+      "state": {
+        "x": 590,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": ".embeddedskills/",
+        "lines": [
+          "config.json：已选参数",
+          "state.json：产物与执行状态"
+        ],
+        "tone": "gray"
+      },
+      "next": {
+        "x": 90,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "后续分析 / 工具调用",
+        "lines": [
+          "ELF / MAP / size",
+          "由 workflow 选择后续阶段"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "source",
+        "b": "select",
+        "points": [
+          [
+            510,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            590,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "select",
+        "b": "exec",
+        "points": [
+          [
+            1010,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1090,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "exec",
+        "b": "result",
+        "points": [
+          [
+            1300.0,
+            380
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            605
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "result",
+        "b": "state",
+        "points": [
+          [
+            1090,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1010,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "state",
+        "b": "next",
+        "points": [
+          [
+            590,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            510,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "eide",
+    "title": "EIDE · 构建后端结构",
+    "subtitle": "工程发现、配置选择、构建执行与产物记录的调用结构",
+    "note": "图示为后端能力结构；图中工具路径与构建产物由本机环境和目标工程确定。",
+    "height": 1000,
+    "source": "eide/GUIDE.md",
+    "nodes": {
+      "source": {
+        "x": 90,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": ".eide/eide.yml",
+        "lines": [
+          "工程发现 / 配置枚举",
+          "ConfigName / builder.params"
+        ],
+        "tone": "gray"
+      },
+      "select": {
+        "x": 590,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "工程与目标选择",
+        "lines": [
+          "CLI / config / state",
+          "scan + 目标枚举"
+        ],
+        "tone": "blue"
+      },
+      "exec": {
+        "x": 1090,
+        "y": 225,
+        "w": 420,
+        "h": 155,
+        "title": "unify_builder",
+        "lines": [
+          "ARM CC (AC5 / AC6) 或 GCC",
+          "build / rebuild / clean / size"
+        ],
+        "tone": "purple"
+      },
+      "result": {
+        "x": 1090,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "构建结果与日志",
+        "lines": [
+          "ELF / HEX / 日志",
+          "结构化结果与产物路径"
+        ],
+        "tone": "teal"
+      },
+      "state": {
+        "x": 590,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": ".embeddedskills/",
+        "lines": [
+          "config.json：已选参数",
+          "state.json：产物与执行状态"
+        ],
+        "tone": "gray"
+      },
+      "next": {
+        "x": 90,
+        "y": 605,
+        "w": 420,
+        "h": 170,
+        "title": "后续分析 / 工具调用",
+        "lines": [
+          "ELF / MAP / size",
+          "由 workflow 选择后续阶段"
+        ],
+        "tone": "amber"
+      }
+    },
+    "edges": [
+      {
+        "a": "source",
+        "b": "select",
+        "points": [
+          [
+            510,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            550.0,
+            302.5
+          ],
+          [
+            590,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "select",
+        "b": "exec",
+        "points": [
+          [
+            1010,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1050.0,
+            302.5
+          ],
+          [
+            1090,
+            302.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "exec",
+        "b": "result",
+        "points": [
+          [
+            1300.0,
+            380
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            492.5
+          ],
+          [
+            1300.0,
+            605
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "result",
+        "b": "state",
+        "points": [
+          [
+            1090,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1050.0,
+            690.0
+          ],
+          [
+            1010,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "state",
+        "b": "next",
+        "points": [
+          [
+            590,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            550.0,
+            690.0
+          ],
+          [
+            510,
+            690.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "jlink",
+    "title": "J-Link · 下载与调试结构",
+    "subtitle": "主机包装脚本通过调试后端访问目标 MCU，聚合执行结果与观测数据",
+    "note": "下载、复位、写内存等设备动作按本次任务选择；图中不表示已连接或验证设备。",
+    "height": 1000,
+    "source": "jlink/GUIDE.md",
+    "nodes": {
+      "input": {
+        "x": 90,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "目标与输入",
+        "lines": [
+          "芯片 / 探针 / 接口 / 地址",
+          "HEX / BIN / ELF"
+        ],
+        "tone": "gray"
+      },
+      "wrap": {
+        "x": 590,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "Python 后端脚本",
+        "lines": [
+          "参数解析 / 子进程调用",
+          "统一 JSON 与日志"
+        ],
+        "tone": "blue"
+      },
+      "engine": {
+        "x": 1090,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "J-Link Commander / Server",
+        "lines": [
+          "下载 / 读内存 / 执行控制"
+        ],
+        "tone": "purple"
+      },
+      "target": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "探针 → 目标 MCU",
+        "lines": [
+          "SWD / JTAG",
+          "Flash / RAM / CPU 寄存器"
+        ],
+        "tone": "amber"
+      },
+      "observe": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "观测与源码调试",
+        "lines": [
+          "GDB：backtrace / locals",
+          "RTT / 外部 SWO viewer"
+        ],
+        "tone": "teal"
+      },
+      "report": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "诊断结果",
+        "lines": [
+          "寄存器 / 内存 / backtrace",
+          "运行日志与阶段状态"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "input",
+        "b": "wrap",
+        "points": [
+          [
+            510,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            590,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "wrap",
+        "b": "engine",
+        "points": [
+          [
+            1010,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1090,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "engine",
+        "b": "target",
+        "points": [
+          [
+            1300.0,
+            370
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "target",
+        "b": "observe",
+        "points": [
+          [
+            1090,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1010,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "observe",
+        "b": "report",
+        "points": [
+          [
+            590,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            510,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "openocd",
+    "title": "OpenOCD · 下载与调试结构",
+    "subtitle": "主机包装脚本通过调试后端访问目标 MCU，聚合执行结果与观测数据",
+    "note": "下载、复位、写内存等设备动作按本次任务选择；图中不表示已连接或验证设备。",
+    "height": 1000,
+    "source": "openocd/GUIDE.md",
+    "nodes": {
+      "input": {
+        "x": 90,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "目标与输入",
+        "lines": [
+          "芯片 / 探针 / 接口 / 地址",
+          "固件文件 / interface + target"
+        ],
+        "tone": "gray"
+      },
+      "wrap": {
+        "x": 590,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "Python 后端脚本",
+        "lines": [
+          "参数解析 / 子进程调用",
+          "统一 JSON 与日志"
+        ],
+        "tone": "blue"
+      },
+      "engine": {
+        "x": 1090,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "OpenOCD / GDB Server",
+        "lines": [
+          "下载 / 读内存 / 执行控制"
+        ],
+        "tone": "purple"
+      },
+      "target": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "探针 → 目标 MCU",
+        "lines": [
+          "调试适配器 / 目标配置",
+          "Flash / RAM / CPU 寄存器"
+        ],
+        "tone": "amber"
+      },
+      "observe": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "观测与源码调试",
+        "lines": [
+          "GDB / 寄存器 / 断点",
+          "semihosting / ITM"
+        ],
+        "tone": "teal"
+      },
+      "report": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "诊断结果",
+        "lines": [
+          "寄存器 / 内存 / backtrace",
+          "运行日志与阶段状态"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "input",
+        "b": "wrap",
+        "points": [
+          [
+            510,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            590,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "wrap",
+        "b": "engine",
+        "points": [
+          [
+            1010,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1090,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "engine",
+        "b": "target",
+        "points": [
+          [
+            1300.0,
+            370
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "target",
+        "b": "observe",
+        "points": [
+          [
+            1090,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1010,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "observe",
+        "b": "report",
+        "points": [
+          [
+            590,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            510,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "probe-rs",
+    "title": "probe-rs · 探针与调试结构",
+    "subtitle": "主机包装脚本通过调试后端访问目标 MCU，聚合执行结果与观测数据",
+    "note": "下载、复位、写内存等设备动作按本次任务选择；图中不表示已连接或验证设备。",
+    "height": 1000,
+    "source": "probe-rs/GUIDE.md",
+    "nodes": {
+      "input": {
+        "x": 90,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "目标与输入",
+        "lines": [
+          "芯片 / 探针 / 接口 / 地址",
+          "ELF / HEX / BIN / UF2"
+        ],
+        "tone": "gray"
+      },
+      "wrap": {
+        "x": 590,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "Python 后端脚本",
+        "lines": [
+          "参数解析 / 子进程调用",
+          "统一 JSON 与日志"
+        ],
+        "tone": "blue"
+      },
+      "engine": {
+        "x": 1090,
+        "y": 210,
+        "w": 420,
+        "h": 160,
+        "title": "probe-rs CLI / GDB",
+        "lines": [
+          "下载 / 读内存 / 执行控制"
+        ],
+        "tone": "purple"
+      },
+      "target": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "探针 → 目标 MCU",
+        "lines": [
+          "支持的调试探针 / 目标芯片",
+          "Flash / RAM / CPU 寄存器"
+        ],
+        "tone": "amber"
+      },
+      "observe": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "观测与源码调试",
+        "lines": [
+          "attach / run / GDB",
+          "RTT 日志"
+        ],
+        "tone": "teal"
+      },
+      "report": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 185,
+        "title": "诊断结果",
+        "lines": [
+          "寄存器 / 内存 / backtrace",
+          "运行日志与阶段状态"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "input",
+        "b": "wrap",
+        "points": [
+          [
+            510,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            550.0,
+            290.0
+          ],
+          [
+            590,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "wrap",
+        "b": "engine",
+        "points": [
+          [
+            1010,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1050.0,
+            290.0
+          ],
+          [
+            1090,
+            290.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "engine",
+        "b": "target",
+        "points": [
+          [
+            1300.0,
+            370
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            480.0
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "target",
+        "b": "observe",
+        "points": [
+          [
+            1090,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1050.0,
+            682.5
+          ],
+          [
+            1010,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "observe",
+        "b": "report",
+        "points": [
+          [
+            590,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            550.0,
+            682.5
+          ],
+          [
+            510,
+            682.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "serial",
+    "title": "串口后端 · 收发与日志结构",
+    "subtitle": "pyserial 接入 UART；读取、发送、日志和可选多路复用分开",
+    "note": "串口采集后端用于数据与证据收集；持续命令会话可使用 terminal 后端。",
+    "height": 1000,
+    "source": "serial/GUIDE.md",
+    "nodes": {
+      "config": {
+        "x": 90,
+        "y": 205,
+        "w": 420,
+        "h": 140,
+        "title": "端口与链路配置",
+        "lines": [
+          "scan / COM / 波特率",
+          "数据位 / 校验位 / 超时"
+        ],
+        "tone": "gray"
+      },
+      "serial": {
+        "x": 590,
+        "y": 205,
+        "w": 420,
+        "h": 140,
+        "title": "pyserial / 串口连接",
+        "lines": [
+          "主机串口句柄",
+          "端口读写与生命周期"
+        ],
+        "tone": "blue"
+      },
+      "board": {
+        "x": 1090,
+        "y": 205,
+        "w": 420,
+        "h": 140,
+        "title": "USB-UART ↔ MCU",
+        "lines": [
+          "UART TX / RX",
+          "文本与二进制字节"
+        ],
+        "tone": "amber"
+      },
+      "read": {
+        "x": 90,
+        "y": 550,
+        "w": 420,
+        "h": 175,
+        "title": "接收与监控",
+        "lines": [
+          "monitor / hex",
+          "文本或 HEX 输出"
+        ],
+        "tone": "teal"
+      },
+      "log": {
+        "x": 590,
+        "y": 550,
+        "w": 420,
+        "h": 175,
+        "title": "日志与可选多路复用",
+        "lines": [
+          "log → 文件",
+          "mux → 多客户端读取"
+        ],
+        "tone": "teal"
+      },
+      "send": {
+        "x": 1090,
+        "y": 550,
+        "w": 420,
+        "h": 175,
+        "title": "发送入口",
+        "lines": [
+          "send：文本 / Hex",
+          "返回实际发送结果"
+        ],
+        "tone": "purple"
+      }
+    },
+    "edges": [
+      {
+        "a": "config",
+        "b": "serial",
+        "points": [
+          [
+            510,
+            275.0
+          ],
+          [
+            550.0,
+            275.0
+          ],
+          [
+            550.0,
+            275.0
+          ],
+          [
+            590,
+            275.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "serial",
+        "b": "board",
+        "points": [
+          [
+            1010,
+            275.0
+          ],
+          [
+            1050.0,
+            275.0
+          ],
+          [
+            1050.0,
+            275.0
+          ],
+          [
+            1090,
+            275.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "serial",
+        "b": "read",
+        "points": [
+          [
+            800.0,
+            345
+          ],
+          [
+            800.0,
+            447.5
+          ],
+          [
+            300.0,
+            447.5
+          ],
+          [
+            300.0,
+            550
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "serial",
+        "b": "log",
+        "points": [
+          [
+            800.0,
+            345
+          ],
+          [
+            800.0,
+            447.5
+          ],
+          [
+            800.0,
+            447.5
+          ],
+          [
+            800.0,
+            550
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "send",
+        "b": "board",
+        "points": [
+          [
+            1300.0,
+            550
+          ],
+          [
+            1300.0,
+            447.5
+          ],
+          [
+            1300.0,
+            447.5
+          ],
+          [
+            1300.0,
+            345
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "can",
+    "title": "CAN / CAN-FD · 总线工具结构",
+    "subtitle": "适配器接入总线；收帧、发送、解码与统计构成独立能力",
+    "note": "仲裁域与数据域速率、通道及 FD 模式由目标网络配置确定。",
+    "height": 1000,
+    "source": "can/GUIDE.md",
+    "nodes": {
+      "config": {
+        "x": 90,
+        "y": 205,
+        "w": 420,
+        "h": 145,
+        "title": "接口 / 通道 / 比特率",
+        "lines": [
+          "scan → 可用接口",
+          "PCAN / Vector / slcan 等"
+        ],
+        "tone": "gray"
+      },
+      "pythoncan": {
+        "x": 590,
+        "y": 205,
+        "w": 420,
+        "h": 145,
+        "title": "python-can / 设备驱动",
+        "lines": [
+          "统一 CAN 帧接口",
+          "适配器连接"
+        ],
+        "tone": "blue"
+      },
+      "bus": {
+        "x": 1090,
+        "y": 205,
+        "w": 420,
+        "h": 145,
+        "title": "CAN / CAN-FD 总线",
+        "lines": [
+          "ID / DLC / Data / Flags",
+          "标准 / 扩展 / FD 帧"
+        ],
+        "tone": "amber"
+      },
+      "recv": {
+        "x": 90,
+        "y": 555,
+        "w": 420,
+        "h": 175,
+        "title": "monitor / log / stats",
+        "lines": [
+          "报文监控 / ASC / BLF / CSV",
+          "负载 / ID 分布 / 帧率"
+        ],
+        "tone": "teal"
+      },
+      "decode": {
+        "x": 590,
+        "y": 555,
+        "w": 420,
+        "h": 175,
+        "title": "decode + 数据库",
+        "lines": [
+          "DBC / ARXML 等",
+          "cantools → 信号值"
+        ],
+        "tone": "teal"
+      },
+      "send": {
+        "x": 1090,
+        "y": 555,
+        "w": 420,
+        "h": 175,
+        "title": "send",
+        "lines": [
+          "标准 / 扩展 / 远程 / FD 帧",
+          "单次 / 周期发送"
+        ],
+        "tone": "purple"
+      }
+    },
+    "edges": [
+      {
+        "a": "config",
+        "b": "pythoncan",
+        "points": [
+          [
+            510,
+            277.5
+          ],
+          [
+            550.0,
+            277.5
+          ],
+          [
+            550.0,
+            277.5
+          ],
+          [
+            590,
+            277.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "pythoncan",
+        "b": "bus",
+        "points": [
+          [
+            1010,
+            277.5
+          ],
+          [
+            1050.0,
+            277.5
+          ],
+          [
+            1050.0,
+            277.5
+          ],
+          [
+            1090,
+            277.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "pythoncan",
+        "b": "recv",
+        "points": [
+          [
+            800.0,
+            350
+          ],
+          [
+            800.0,
+            452.5
+          ],
+          [
+            300.0,
+            452.5
+          ],
+          [
+            300.0,
+            555
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "recv",
+        "b": "decode",
+        "points": [
+          [
+            510,
+            642.5
+          ],
+          [
+            550.0,
+            642.5
+          ],
+          [
+            550.0,
+            642.5
+          ],
+          [
+            590,
+            642.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "send",
+        "b": "bus",
+        "points": [
+          [
+            1300.0,
+            555
+          ],
+          [
+            1300.0,
+            452.5
+          ],
+          [
+            1300.0,
+            452.5
+          ],
+          [
+            1300.0,
+            350
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "net",
+    "title": "网络后端 · 抓包与分析结构",
+    "subtitle": "在线抓包与离线分析分开；连通性检测是并行诊断能力",
+    "note": "抓包依赖接口选择与抓包驱动；统计结果由实际采集的 PCAP / PCAPNG 产生。",
+    "height": 1000,
+    "source": "net/GUIDE.md",
+    "nodes": {
+      "iface": {
+        "x": 90,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "iface / 网络接口",
+        "lines": [
+          "目标 / 过滤器 / 时长",
+          "主机 ↔ 嵌入式设备"
+        ],
+        "tone": "gray"
+      },
+      "capture": {
+        "x": 590,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "capture / tshark / dumpcap",
+        "lines": [
+          "抓包接口 / Npcap 等",
+          "采集网络帧"
+        ],
+        "tone": "blue"
+      },
+      "pcap": {
+        "x": 1090,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "PCAP / PCAPNG",
+        "lines": [
+          "保存采集文件",
+          "也可输入已有抓包文件"
+        ],
+        "tone": "amber"
+      },
+      "analyze": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 170,
+        "title": "离线分析与统计",
+        "lines": [
+          "tshark / capinfos",
+          "协议 / 会话 / 流量"
+        ],
+        "tone": "teal"
+      },
+      "summary": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 170,
+        "title": "结构化网络证据",
+        "lines": [
+          "JSON / 日志",
+          "定位链路与协议问题"
+        ],
+        "tone": "teal"
+      },
+      "connect": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 170,
+        "title": "并行连通性诊断",
+        "lines": [
+          "ping / traceroute / 端口",
+          "系统网络工具"
+        ],
+        "tone": "purple"
+      }
+    },
+    "edges": [
+      {
+        "a": "iface",
+        "b": "capture",
+        "points": [
+          [
+            510,
+            287.5
+          ],
+          [
+            550.0,
+            287.5
+          ],
+          [
+            550.0,
+            287.5
+          ],
+          [
+            590,
+            287.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "capture",
+        "b": "pcap",
+        "points": [
+          [
+            1010,
+            287.5
+          ],
+          [
+            1050.0,
+            287.5
+          ],
+          [
+            1050.0,
+            287.5
+          ],
+          [
+            1090,
+            287.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "pcap",
+        "b": "analyze",
+        "points": [
+          [
+            1300.0,
+            365
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "analyze",
+        "b": "summary",
+        "points": [
+          [
+            1090,
+            675.0
+          ],
+          [
+            1050.0,
+            675.0
+          ],
+          [
+            1050.0,
+            675.0
+          ],
+          [
+            1010,
+            675.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "connect",
+        "b": "summary",
+        "points": [
+          [
+            510,
+            675.0
+          ],
+          [
+            550.0,
+            675.0
+          ],
+          [
+            550.0,
+            675.0
+          ],
+          [
+            590,
+            675.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "ssh",
+    "title": "SSH · 远程操作网关结构",
+    "subtitle": "标准 OpenSSH 配置提供 Host 别名、认证与跳板信息",
+    "note": "持续交互 Shell 使用 terminal；本后端提供命令、传输、探测与隧道入口。",
+    "height": 1000,
+    "source": "ssh/GUIDE.md",
+    "nodes": {
+      "host": {
+        "x": 90,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "Host 别名 / SSH config",
+        "lines": [
+          "HostName / User / Port",
+          "密钥 / ProxyJump"
+        ],
+        "tone": "gray"
+      },
+      "resolve": {
+        "x": 590,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "ssh_config / 目标解析",
+        "lines": [
+          "list / find / resolve / show",
+          "确定唯一远端"
+        ],
+        "tone": "blue"
+      },
+      "remote": {
+        "x": 1090,
+        "y": 210,
+        "w": 420,
+        "h": 155,
+        "title": "OpenSSH ↔ 远程设备",
+        "lines": [
+          "身份认证 / 连接",
+          "Linux 开发板或服务器"
+        ],
+        "tone": "amber"
+      },
+      "exec": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "ssh_exec / ssh_probe",
+        "lines": [
+          "远程命令 / 固定只读探测",
+          "标准输出 / 退出码"
+        ],
+        "tone": "teal"
+      },
+      "transfer": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "ssh_transfer",
+        "lines": [
+          "SCP 上传 / 下载",
+          "本地与远端文件路径"
+        ],
+        "tone": "teal"
+      },
+      "tunnel": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "ssh_tunnel",
+        "lines": [
+          "本地端口转发",
+          "本地端口 ↔ 远端服务"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "host",
+        "b": "resolve",
+        "points": [
+          [
+            510,
+            287.5
+          ],
+          [
+            550.0,
+            287.5
+          ],
+          [
+            550.0,
+            287.5
+          ],
+          [
+            590,
+            287.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "resolve",
+        "b": "remote",
+        "points": [
+          [
+            1010,
+            287.5
+          ],
+          [
+            1050.0,
+            287.5
+          ],
+          [
+            1050.0,
+            287.5
+          ],
+          [
+            1090,
+            287.5
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "remote",
+        "b": "exec",
+        "points": [
+          [
+            1300.0,
+            365
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            300.0,
+            477.5
+          ],
+          [
+            300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "remote",
+        "b": "transfer",
+        "points": [
+          [
+            1300.0,
+            365
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            800.0,
+            477.5
+          ],
+          [
+            800.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "remote",
+        "b": "tunnel",
+        "points": [
+          [
+            1300.0,
+            365
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "terminal",
+    "title": "交互终端 · 会话结构",
+    "subtitle": "后台会话保存连接状态；send 与 read 组成持续的命令 / 响应交互",
+    "note": "read 读取并清空输出缓冲；stop 停止会话并清理状态。",
+    "height": 1000,
+    "source": "terminal/GUIDE.md",
+    "nodes": {
+      "cli": {
+        "x": 90,
+        "y": 205,
+        "w": 420,
+        "h": 160,
+        "title": "terminal_session.py",
+        "lines": [
+          "start / send / read / attach",
+          "list / status / stop"
+        ],
+        "tone": "blue"
+      },
+      "session": {
+        "x": 590,
+        "y": 205,
+        "w": 420,
+        "h": 160,
+        "title": "后台会话与输出缓冲",
+        "lines": [
+          "会话 ID / 名称 / 连接状态",
+          "持续读取远端输出"
+        ],
+        "tone": "purple"
+      },
+      "state": {
+        "x": 1090,
+        "y": 205,
+        "w": 420,
+        "h": 160,
+        "title": ".embeddedskills/state.json",
+        "lines": [
+          "会话状态记录",
+          "状态查询 / 生命周期"
+        ],
+        "tone": "gray"
+      },
+      "serial": {
+        "x": 90,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "serial 后端",
+        "lines": [
+          "pyserial → MCU UART",
+          "AT / 控制台 / Bootloader"
+        ],
+        "tone": "teal"
+      },
+      "ssh": {
+        "x": 590,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "ssh 后端",
+        "lines": [
+          "OpenSSH → 远端 Shell",
+          "持续命令与响应"
+        ],
+        "tone": "teal"
+      },
+      "local": {
+        "x": 1090,
+        "y": 590,
+        "w": 420,
+        "h": 180,
+        "title": "local 后端",
+        "lines": [
+          "Python 标准库",
+          "本机 Shell / REPL / CLI"
+        ],
+        "tone": "teal"
+      }
+    },
+    "edges": [
+      {
+        "a": "cli",
+        "b": "session",
+        "points": [
+          [
+            510,
+            285.0
+          ],
+          [
+            550.0,
+            285.0
+          ],
+          [
+            550.0,
+            285.0
+          ],
+          [
+            590,
+            285.0
+          ]
+        ],
+        "label": "命令 / 数据",
+        "dashed": false
+      },
+      {
+        "a": "session",
+        "b": "state",
+        "points": [
+          [
+            1010,
+            285.0
+          ],
+          [
+            1050.0,
+            285.0
+          ],
+          [
+            1050.0,
+            285.0
+          ],
+          [
+            1090,
+            285.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "session",
+        "b": "serial",
+        "points": [
+          [
+            800.0,
+            365
+          ],
+          [
+            800.0,
+            477.5
+          ],
+          [
+            300.0,
+            477.5
+          ],
+          [
+            300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "session",
+        "b": "ssh",
+        "points": [
+          [
+            800.0,
+            365
+          ],
+          [
+            800.0,
+            477.5
+          ],
+          [
+            800.0,
+            477.5
+          ],
+          [
+            800.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "session",
+        "b": "local",
+        "points": [
+          [
+            800.0,
+            365
+          ],
+          [
+            800.0,
+            477.5
+          ],
+          [
+            1300.0,
+            477.5
+          ],
+          [
+            1300.0,
+            590
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "workflow",
+    "title": "Workflow · 后端编排结构",
+    "subtitle": "发现、选择、串联与聚合；通过子进程复用已有后端",
+    "note": "observe 生成推荐观测命令；编排器内部不长时间占用观测通道。",
+    "height": 1000,
+    "source": "workflow/GUIDE.md",
+    "nodes": {
+      "config": {
+        "x": 90,
+        "y": 180,
+        "w": 420,
+        "h": 150,
+        "title": "配置与阶段请求",
+        "lines": [
+          "CLI → preferred_* → 自动发现",
+          ".embeddedskills/config.json"
+        ],
+        "tone": "gray"
+      },
+      "plan": {
+        "x": 590,
+        "y": 180,
+        "w": 420,
+        "h": 160,
+        "title": "workflow_plan / workflow_run",
+        "lines": [
+          "plan / build / build-flash",
+          "build-debug / observe",
+          "diagnose"
+        ],
+        "tone": "blue"
+      },
+      "state": {
+        "x": 1090,
+        "y": 180,
+        "w": 420,
+        "h": 150,
+        "title": "执行结果与 state.json",
+        "lines": [
+          "阶段状态 / 产物路径",
+          "聚合底层结构化错误"
+        ],
+        "tone": "teal"
+      },
+      "build": {
+        "x": 90,
+        "y": 455,
+        "w": 420,
+        "h": 165,
+        "title": "构建后端",
+        "lines": [
+          "Keil / GCC / EIDE",
+          "成功后产生固件路径"
+        ],
+        "tone": "purple"
+      },
+      "probe": {
+        "x": 590,
+        "y": 455,
+        "w": 420,
+        "h": 165,
+        "title": "下载 / 调试后端",
+        "lines": [
+          "J-Link / OpenOCD / probe-rs",
+          "按阶段请求选择"
+        ],
+        "tone": "amber"
+      },
+      "observe": {
+        "x": 1090,
+        "y": 455,
+        "w": 420,
+        "h": 165,
+        "title": "观测候选",
+        "lines": [
+          "J-Link RTT / SWO",
+          "OpenOCD semihosting / ITM",
+          "probe-rs RTT"
+        ],
+        "tone": "teal"
+      },
+      "result": {
+        "x": 290,
+        "y": 760,
+        "w": 1020,
+        "h": 110,
+        "title": "阶段串联边界",
+        "lines": [
+          "构建失败停止后续设备阶段；单次构建直接使用对应后端即可。"
+        ],
+        "tone": "gray"
+      }
+    },
+    "edges": [
+      {
+        "a": "config",
+        "b": "plan",
+        "points": [
+          [
+            510,
+            255.0
+          ],
+          [
+            550.0,
+            255.0
+          ],
+          [
+            550.0,
+            260.0
+          ],
+          [
+            590,
+            260.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "plan",
+        "b": "state",
+        "points": [
+          [
+            1010,
+            260.0
+          ],
+          [
+            1050.0,
+            260.0
+          ],
+          [
+            1050.0,
+            255.0
+          ],
+          [
+            1090,
+            255.0
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "plan",
+        "b": "build",
+        "points": [
+          [
+            800.0,
+            340
+          ],
+          [
+            800.0,
+            397.5
+          ],
+          [
+            300.0,
+            397.5
+          ],
+          [
+            300.0,
+            455
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "plan",
+        "b": "probe",
+        "points": [
+          [
+            800.0,
+            340
+          ],
+          [
+            800.0,
+            397.5
+          ],
+          [
+            800.0,
+            397.5
+          ],
+          [
+            800.0,
+            455
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "plan",
+        "b": "observe",
+        "points": [
+          [
+            800.0,
+            340
+          ],
+          [
+            800.0,
+            397.5
+          ],
+          [
+            1300.0,
+            397.5
+          ],
+          [
+            1300.0,
+            455
+          ]
+        ],
+        "label": "",
+        "dashed": false
+      },
+      {
+        "a": "build",
+        "b": "probe",
+        "points": [
+          [
+            510,
+            537.5
+          ],
+          [
+            550.0,
+            537.5
+          ],
+          [
+            550.0,
+            537.5
+          ],
+          [
+            590,
+            537.5
+          ]
+        ],
+        "label": "固件路径",
+        "dashed": false
+      }
+    ],
+    "groups": []
+  }
+]

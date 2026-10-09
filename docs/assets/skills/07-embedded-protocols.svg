@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">嵌入式通信 · 分层链路</title><desc id="desc">发送方向自上而下；接收方向自下而上，Protocol 完成字节与语义转换</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">嵌入式通信 · 分层链路</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">发送方向自上而下；接收方向自下而上，Protocol 完成字节与语义转换</text>
+<polyline points="565.0,288 565.0,305.5 565.0,305.5 565.0,323" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,323 571.0,310.0 559.0,310.0" fill="#718197"/>
+<polyline points="565.0,421 565.0,438.5 565.0,438.5 565.0,456" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,456 571.0,443.0 559.0,443.0" fill="#718197"/>
+<polyline points="565.0,554 565.0,571.5 565.0,571.5 565.0,589" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,589 571.0,576.0 559.0,576.0" fill="#718197"/>
+<polyline points="565.0,687 565.0,704.5 565.0,704.5 565.0,722" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="565.0,722 571.0,709.0 559.0,709.0" fill="#718197"/>
+<rect x="90" y="190" width="950" height="98" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="235.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">APP / Service</text>
+<text x="112" y="269.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">语义命令 / 业务结果</text>
+<rect x="90" y="323" width="950" height="98" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="112" y="368.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">Protocol</text>
+<text x="112" y="402.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">帧界定 / 长度 / CRC / 字节序 / 重同步</text>
+<rect x="90" y="456" width="950" height="98" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="112" y="501.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">BSP Service / Link</text>
+<text x="112" y="535.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">字节流 / 消息 / 环形缓冲区</text>
+<rect x="90" y="589" width="950" height="98" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="112" y="634.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">BSP Driver</text>
+<text x="112" y="668.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">驱动 API / HAL 封装</text>
+<rect x="90" y="722" width="950" height="98" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="112" y="767.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">UART / CAN / SPI / I2C / USB</text>
+<text x="112" y="801.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">MCU 通信外设</text>
+<rect x="1120" y="245" width="390" height="410" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="1142" y="288.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#596778">UART 接收示例</text>
+<text x="1142" y="324.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">DMA + IDLE</text>
+<text x="1142" y="358.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">↓</text>
+<text x="1142" y="392.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">环形 / 双缓冲</text>
+<text x="1142" y="426.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">↓</text>
+<text x="1142" y="460.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Task 通知</text>
+<text x="1142" y="494.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">↓</text>
+<text x="1142" y="528.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">Protocol parser</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">接收回调仅记录数据段并通知 Task；协议必须处理超时、缓存上限和异常输入。</text>
+</svg>

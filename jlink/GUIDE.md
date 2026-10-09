@@ -1,5 +1,7 @@
 # J-Link 下载与在线调试
 
+![J-Link · 下载与调试结构](../docs/assets/skills/jlink.png)
+
 本 skill 提供 J-Link 探针的设备探测、固件烧录、内存读写、寄存器查看、目标复位、RTT 日志读取，以及轻量在线调试和 GDB 源码级调试能力。
 
 ## 配置

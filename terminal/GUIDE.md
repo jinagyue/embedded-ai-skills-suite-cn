@@ -1,5 +1,7 @@
 # Terminal — 双向交互终端会话
 
+![交互终端 · 会话结构](../docs/assets/skills/terminal.png)
+
 统一封装串口、SSH 和本地 Shell 的双向交互会话。它补齐 `serial` 的“监控/发送是分离命令”和 `ssh` 的“远程命令多为一次性执行”之间的空白：当目标需要保持登录状态、菜单状态、REPL 状态或设备 CLI 上下文时，使用本 skill。
 
 ## 定位

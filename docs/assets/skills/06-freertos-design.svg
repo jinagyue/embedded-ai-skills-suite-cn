@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">FreeRTOS · Task 与 IPC 结构</title><desc id="desc">按独立并发活动划分 Task；每条连线标明交互机制</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="82.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="44" font-weight="700" fill="#243247">FreeRTOS · Task 与 IPC 结构</text>
+<text x="70" y="135.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#526175">按独立并发活动划分 Task；每条连线标明交互机制</text>
+<polyline points="300.0,335 300.0,405.0 300.0,405.0 300.0,475" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="300.0,475 306.0,462.0 294.0,462.0" fill="#718197"/>
+<rect x="235.71875" y="387.0" width="128.5625" height="29" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<text x="240.71875" y="408.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#526175">Notification</text>
+<polyline points="510,552.5 550.0,552.5 550.0,552.5 590,552.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="590,552.5 577.0,546.5 577.0,558.5" fill="#718197"/>
+<rect x="511.5859375" y="534.5" width="76.828125" height="29" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<text x="516.5859375" y="556.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#526175">Queue</text>
+<polyline points="1010,552.5 1050.0,552.5 1050.0,552.5 1090,552.5" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="1090,552.5 1077.0,546.5 1077.0,558.5" fill="#718197"/>
+<rect x="1011.5859375" y="534.5" width="76.828125" height="29" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<text x="1016.5859375" y="556.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#526175">Queue</text>
+<polyline points="800.0,335 800.0,405.0 800.0,405.0 800.0,475" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,475 806.0,462.0 794.0,462.0" fill="#718197"/>
+<rect x="735.71875" y="387.0" width="128.5625" height="29" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<text x="740.71875" y="408.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#526175">Notification</text>
+<polyline points="800.0,630 800.0,692.5 800.0,692.5 800.0,755" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,755 806.0,742.0 794.0,742.0" fill="#718197"/>
+<polyline points="1300.0,630 1300.0,692.5 800.0,692.5 800.0,755" fill="none" stroke="#718197" stroke-width="3"/>
+<polygon points="800.0,755 806.0,742.0 794.0,742.0" fill="#718197"/>
+<polyline points="300,475 300,410 1300,410 1300,335" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="1300,335 1294.0,348.0 1306.0,348.0" fill="#718197"/>
+<polyline points="800,475 800,410 1300,410 1300,335" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="1300,335 1294.0,348.0 1306.0,348.0" fill="#718197"/>
+<polyline points="1300,475 1300,410 1300,410 1300,335" fill="none" stroke="#718197" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="1300,335 1294.0,348.0 1306.0,348.0" fill="#718197"/>
+<rect x="90" y="195" width="420" height="140" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="112" y="240.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">ISR / 外设事件</text>
+<text x="112" y="274.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">采样 / 清标志 / 时间戳</text>
+<text x="112" y="308.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">非阻塞投递事件</text>
+<rect x="90" y="475" width="420" height="155" rx="12" fill="#edf4ff" stroke="#2463b4" stroke-width="2"/>
+<text x="112" y="520.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2463b4">CommTask</text>
+<text x="112" y="554.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">接收 / 协议解析</text>
+<text x="112" y="588.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">命令分发</text>
+<rect x="590" y="475" width="420" height="155" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="612" y="520.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">MeasureTask</text>
+<text x="612" y="554.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">采集与计算</text>
+<text x="612" y="588.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">测量结果</text>
+<rect x="1090" y="475" width="420" height="155" rx="12" fill="#f2edfc" stroke="#7150a3" stroke-width="2"/>
+<text x="1112" y="520.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#7150a3">StorageTask / UITask</text>
+<text x="1112" y="554.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">存储 / 显示</text>
+<text x="1112" y="588.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">结果消费</text>
+<rect x="590" y="195" width="420" height="140" rx="12" fill="#fff5e6" stroke="#a96812" stroke-width="2"/>
+<text x="612" y="240.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#a96812">Software Timer</text>
+<text x="612" y="274.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">周期事件</text>
+<text x="612" y="308.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">通知 Task</text>
+<rect x="590" y="755" width="420" height="130" rx="12" fill="#f3f5f8" stroke="#596778" stroke-width="2"/>
+<text x="612" y="800.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#596778">共享 SPI / UART 资源</text>
+<text x="612" y="834.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">以 Mutex 串行化访问</text>
+<rect x="1090" y="195" width="420" height="140" rx="12" fill="#eaf8f5" stroke="#117a68" stroke-width="2"/>
+<text x="1112" y="240.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#117a68">HealthTask / 运行探针</text>
+<text x="1112" y="274.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">活性 / Stack HWM / Heap</text>
+<text x="1112" y="308.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#243247">运行时记录 → 分析报告</text>
+<rect x="65" y="923" width="1470" height="50" rx="7" fill="#f4f6f9" stroke="none" stroke-width="2"/>
+<text x="82" y="955.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#526175">示例关系用于任务设计；具体 Task 数量、优先级与栈预算由目标工程确定。</text>
+</svg>

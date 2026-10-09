@@ -1,5 +1,7 @@
 # CAN — 嵌入式 CAN / CAN-FD 调试工具
 
+![CAN / CAN-FD · 总线工具结构](../docs/assets/skills/can.png)
+
 统一封装接口发现、实时监控、报文发送、日志记录、数据库文件解码和统计分析能力。
 
 ## 配置
